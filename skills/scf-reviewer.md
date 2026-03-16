@@ -1,6 +1,6 @@
 ---
 name: scf-reviewer
-description: "Review Stellar Community Fund (SCF) Build Award applications. Use when evaluating SCF submissions, filling out Integration Track or Open Track review forms, or doing deep-dive analysis of grant applications to the Stellar ecosystem. Covers project fit assessment, technical architecture evaluation, team readiness, traction validation, budget analysis, and funding recommendations."
+description: "Review Stellar Community Fund (SCF) Build Award applications. Use when evaluating SCF submissions, covering project fit assessment, technical architecture evaluation, team readiness, traction validation, budget analysis, and funding recommendations."
 ---
 
 # SCF Project Reviewer
@@ -33,7 +33,7 @@ Different tracks have different priorities. Weight your evaluation accordingly:
 
 | Priority | Area | Weight |
 |----------|------|--------|
-| Highest | **Integration Partner Fit** — Is the partner relevant, on the eligible list, and central to the project? Is this genuinely a grant *for* an integration, or an Open Track project with a partner bolted on? | Critical |
+| Highest | **Integration Partner Fit** — Is the partner relevant, on the eligible list, and central to the project? | Critical |
 | High | **End-User Value** — Does this put the building block in the hands of real users? | High |
 | High | **Traction** — Existing users, demand signals, partner commitments | High |
 | Medium | **Technical Architecture** — Sound integration design, correct SDK/API usage | Medium |
@@ -44,9 +44,9 @@ Different tracks have different priorities. Weight your evaluation accordingly:
 
 | Priority | Area | Weight |
 |----------|------|--------|
-| Highest | **Ecosystem Impact** — What does this unlock for Stellar? Composability, new capabilities, ecosystem-level value | Critical |
-| High | **Technical Depth** — Soroban-native design, contract architecture, protocol design, security | High |
-| High | **Differentiation** — Why is this better/different than alternatives on Stellar or other chains? | High |
+| Highest | **Ecosystem Impact** — What does this unlock for Stellar? Composability, new capabilities | Critical |
+| High | **Technical Depth** — Soroban-native design, contract architecture, security | High |
+| High | **Differentiation** — Why is this better/different than alternatives? | High |
 | Medium | **Traction** — Community interest, validated need, prior work | Medium |
 | Medium | **Budget** — Proportional to technical scope | Medium |
 | Medium | **Community Readiness** — Will community voters understand and support this? | Medium |
@@ -55,12 +55,12 @@ Different tracks have different priorities. Weight your evaluation accordingly:
 
 | Priority | Area | Weight |
 |----------|------|--------|
-| Highest | **Spec Compliance** — Does the submission address every requirement in the RFP? | Critical |
+| Highest | **Spec Compliance** — Does the submission address every RFP requirement? | Critical |
 | High | **Relevant Prior Work** — Has the team built this type of infrastructure before? | High |
 | High | **Developer Experience** — Setup ease, docs plan, error messages, SDK integration | High |
 | High | **Maintenance Plan** — During-grant and post-grant support commitments | High |
 | Medium | **Technical Approach** — Sound architecture, appropriate technology choices | Medium |
-| Medium | **Timeline** — Realistic, front-loaded with hard work, includes docs/testing time | Medium |
+| Medium | **Timeline** — Realistic, front-loaded, includes docs/testing time | Medium |
 
 ## Evaluation Framework
 
@@ -68,12 +68,12 @@ Covers six areas:
 
 | Area | What to Assess |
 |------|---------------|
-| **Integration Partner Fit** | Is the partner relevant? Is Stellar central to the integration? Is this genuinely a grant for an integration (not an Open Track project with a peripheral partner)? |
-| **Technical Architecture** | Does the project use Soroban smart contracts? Is the design sound? Is Stellar core or shoehorned? Does the architecture include data flows, security, and state management? |
-| **Team Readiness** | Are team members named and credible? Prior Stellar/Soroban experience? Can they execute on this specific scope? |
-| **Traction** | Organic demand signals, adoption metrics, existing user base? On-chain metrics verifiable? Adoption targets specific and measurable? |
-| **Budget & Deliverables** | Is the budget bottom-up and proportional to scope? Are milestones concrete and verifiable? Does MVP include Stellar/Soroban technical work? |
-| **Ecosystem Commitment** | Long-term Stellar alignment or chain-hopping risk? Maintenance plan? Post-launch growth strategy? |
+| **Integration Partner Fit** | Is the partner relevant? Is Stellar central to the integration? |
+| **Technical Architecture** | Does the project use Soroban smart contracts? Is the design sound? Is Stellar core or shoehorned? |
+| **Team Readiness** | Are team members named and credible? Prior Stellar/Soroban experience? |
+| **Traction** | Organic demand signals, adoption metrics, existing user base? On-chain metrics verifiable? |
+| **Budget & Deliverables** | Is the budget bottom-up and proportional to scope? Are milestones concrete and verifiable? |
+| **Ecosystem Commitment** | Long-term Stellar alignment or chain-hopping risk? Maintenance plan? |
 
 ## Output Formats
 
@@ -133,17 +133,12 @@ Track: [Integration / Open / RFP]
 - Stellar positioned as a "secondary" chain
 - No adoption targets or success metrics
 - Prior inactive token launches on other chains
-- pump.fun tokens
 - No Soroban usage
 - Unnamed or anonymous team members
-- Peripheral integration partners with no clear Stellar relevance
-- Claims that cannot be verified (broken links, no public evidence, unsubstantiated metrics)
-- Integration Track submissions that are really Open Track projects with a peripheral partner mentioned
+- Claims that cannot be verified (broken links, no public evidence)
 - Budget with no line-item breakdown or rates
 - "Continue development" as a deliverable
-- No UX readiness plan for T3
-- Documentation as an afterthought (especially for RFP Track)
-- No maintenance plan (especially for RFP Track)
+- No maintenance plan
 
 ## Common Strengths
 
@@ -155,21 +150,6 @@ Track: [Integration / Open / RFP]
 - Proportional budgets that match deliverable scope
 - Composable infrastructure that benefits the broader ecosystem
 - Named team with verifiable track record
-- Bottom-up budget with rates and effort estimates
-- Verifiable on-chain traction (for returning applicants)
-- Clear maintenance and post-launch plan
-
-## Review Benchmarks
-
-Use these guides as benchmarks for "what good looks like" when evaluating submissions:
-
-- [Technical Architecture Guide](../docs/technical-architecture.md) — What a strong architecture section includes
-- [Writing Deliverables Guide](../docs/writing-deliverables.md) — How deliverables should be structured across tranches
-- [Proving Traction Guide](../docs/proving-traction.md) — What credible traction evidence looks like
-- [Writing Budgets Guide](../docs/writing-budgets.md) — How a well-structured budget is built
-- [UX Readiness Guide](../docs/ux-readiness.md) — What UX readiness requires at T3
-- [RFP Response Guide](../docs/rfp-response-guide.md) — What strong RFP responses include
-- [SCF 7.0 Guide](../docs/scf-7-guide.md) — Full program context and track definitions
 
 ## Reference Links
 
@@ -178,4 +158,3 @@ Use these guides as benchmarks for "what good looks like" when evaluating submis
 - [FAQ](https://communityfund.stellar.org/faq)
 - [SCF 7.0 Announcement](https://communityfund.stellar.org/blog/scf-7-0)
 - [Awards Page](https://communityfund.stellar.org/awards)
-- [Stellar Wallet Integration Docs](https://developers.stellar.org/docs/build/apps/wallet)
