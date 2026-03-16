@@ -8,15 +8,18 @@ A collection of tools, skills, and reference materials for participating in the 
 
 Reusable AI skills for SCF applications — reviewing, drafting, budgeting, prescreening, and more:
 
+- **[scf-round-reviewer](skills/scf-round-reviewer.md)** — Review and rank an entire SCF round end-to-end from a CSV export. Supports Open Track, Integration Track, and RFP Track with track-specific scoring. Orchestrates parallel batch reviews, calibration, and final ranking.
 - **[scf-reviewer](skills/scf-reviewer.md)** — Review Build Award applications with structured evaluation across integration fit, architecture, team, traction, budget, and ecosystem commitment.
-- **[scf-submission-drafter](skills/scf-submission-drafter.md)** — Draft a complete Build Award application interactively, section by section.
-- **[scf-budget-builder](skills/scf-budget-builder.md)** — Build bottom-up budgets with rates, per-deliverable breakdowns, and tranche mapping.
+- **[fetch-external-doc](skills/fetch-external-doc.md)** — Fetch external documents linked in submissions — Google Docs, Google Drive PDFs, GitHub, Notion, IPFS. Uses `curl` for reliable Google Docs/Drive fetching.
 - **[scf-prescreen-checker](skills/scf-prescreen-checker.md)** — Simulate the prescreen filter that eliminates 18.7% of submissions before human review.
+- **[scf-budget-builder](skills/scf-budget-builder.md)** — Build bottom-up budgets with rates, per-deliverable breakdowns, and tranche mapping.
+- **[scf-competitor-analyst](skills/scf-competitor-analyst.md)** — Research the competitive landscape and articulate differentiation.
+- **[scf-submission-drafter](skills/scf-submission-drafter.md)** — Draft a complete Build Award application interactively, section by section.
 - **[scf-interest-form-drafter](skills/scf-interest-form-drafter.md)** — Draft a strong Interest Form to get invited to apply.
 - **[scf-tranche-reporter](skills/scf-tranche-reporter.md)** — Write tranche submission reports with deliverable evidence and completion documentation.
-- **[scf-competitor-analyst](skills/scf-competitor-analyst.md)** — Research the competitive landscape and articulate differentiation.
 - **[scf-referral-preparer](skills/scf-referral-preparer.md)** — Prepare materials for an SCF referral from a Pilot or SDF staff member.
-- **[scf-round-reviewer](skills/scf-round-reviewer.md)** — Review and rank an entire Build Award round: batch review, calibration, and final ranking.
+
+> **For a turnkey review setup**, see [scf-review-boilerplate](https://github.com/lumenloop/scf-review-boilerplate) — drop a CSV and run.
 
 ### [docs/](docs/)
 
