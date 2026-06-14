@@ -11,11 +11,13 @@ Helps teams prepare a referral package — the materials and context a referrer 
 
 ## Why This Matters
 
-A referral is a trust transaction. The referrer stakes their reputation on your team. They earn recognition and financial incentives tied to the success of teams they refer — if you fail or waste funding, their credibility erodes.
+A referral is a trust transaction. The referrer stakes their reputation on your team. They earn recognition and a discretionary reward tied to the success of teams they refer — if you fail or waste funding, their credibility erodes.
 
-Referrers are typically SCF Pilots (the highest governance tier), SDF staff, or alumni who completed their deliverables. They're selective because every endorsement carries real consequences. Giving them a clear, honest, well-organized package isn't just polite — it directly affects whether they'll refer you.
+Referrers must be approved and onboarded by the SCF / Ecosystem Growth team; they include community members, Stellar Ambassadors, Navigators, Pilots, partners, and SDF personnel. They're selective because every endorsement carries real consequences. Giving them a clear, honest, well-organized package isn't just polite — it directly affects whether they'll refer you.
 
-Referred submissions bypass SDF prescreening (which filters 18.7% of applications) and carry stronger trust signals into panel review.
+SCF relies heavily on referral signals, so a referral surfaces your team and adds context that's confirmed and considered during evaluation. It does **not**, however, bypass prescreening: every full submission still goes through SDF prescreening for completeness and core eligibility, referred or not. Evaluation and funding decisions remain independent and are not influenced by the referral — a referral is a trust signal, not a shortcut.
+
+**The referral reward (Referral Program §4.4).** At SCF's sole discretion, a referrer may receive **up to 1% of the total award** granted to a team they referred (in XLM), with an **aggregate cap of 6 rewards per application cycle**. Any reward is **paid only on completion and disbursement of the final Build Award tranche** — so the referrer is rewarded only if the team ships all the way through. Current SDF employees are **not eligible** for referral rewards. None of this is guaranteed; it's discretionary.
 
 ## When to Use
 
@@ -209,10 +211,10 @@ Produce the complete referral package using the template above, with:
 
 ## Reference Guides
 
-- [Getting a Referral](../docs/getting-a-referral.md) — Full referral program guide, including who refers, what they stake, and how to approach them
-- [Interest Form Tips](../docs/interest-form-tips.md) — The Interest Form must be submitted before a referral can happen
-- [Tips for Applying](../docs/tips-for-applying.md) — What makes a strong candidate overall
-- [Proving Traction](../docs/proving-traction.md) — How to present evidence of demand
+- [Getting a Referral](../../docs/getting-a-referral.md) — Full referral program guide, including who refers, what they stake, and how to approach them
+- [Interest Form Tips](../../docs/interest-form-tips.md) — The Interest Form must be submitted before a referral can happen
+- [Tips for Applying](../../docs/tips-for-applying.md) — What makes a strong candidate overall
+- [Proving Traction](../../docs/proving-traction.md) — How to present evidence of demand
 
 ## Reference Links
 

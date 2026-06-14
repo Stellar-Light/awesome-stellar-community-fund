@@ -68,8 +68,8 @@ SCF 7.0 reorganizes the Build Award into three specialized tracks, plus a decent
 
 **Who it's for:** Very early-stage teams that aren't yet ready for a full Build Award.
 
-- A decentralized evolution of the former SCF Kickstart program.
-- Regional Stellar Ambassador chapters can recommend projects for small awards of **up to $15K** per project.
+- Accelerated funding routed through regional Stellar Ambassador Chapters.
+- Ambassador Chapters can recommend projects for small initial awards of **$1,000–$5,000**, up to a **$15,000 aggregate lifetime cap** across follow-on disbursements.
 - Supports early experimentation, prototyping, and local pilots.
 - All award decisions remain subject to SDF review and approval.
 - Designed to feed the Build Award pipeline: teams that mature through Instawards can later apply for a full Build Award.
@@ -93,21 +93,16 @@ Applicants divide their project into **three milestones** (MVP, Testnet, Mainnet
 |---------|-------------|--------------|
 | T0 | 10% | Automatically on award approval |
 | T1 | 20% | MVP milestone complete |
-| T2 | 30% | Testnet milestone complete (also unlocks Stellar LaunchKit) |
-| T3 | 40% | Mainnet milestone complete with UX readiness |
+| T2 | 30% | Testnet milestone complete |
+| T3 | 40% | Mainnet Launch (or equivalent) complete |
 
 T0 is paid automatically when the project is approved — no deliverables required. The three milestones (MVP, Testnet, Mainnet) are symbolic names for the applicant-defined deliverable groups that trigger payments T1, T2, and T3.
 
-**Important change in 7.0:** The final tranche now requires **UX readiness** — clear onboarding flows, functional and tested interfaces, and basic usability validation. Mainnet deployment alone is no longer sufficient.
+The final tranche (T3) is **Mainnet Launch (or equivalent)** and releases on the mainnet deliverables: deployment, documentation, SDK, monitoring, and go-live metrics. A UX audit and user testing may be offered as optional support during the award process, and UX-related work is allowable budget — but UX is not a separate payout gate.
 
-### Stellar LaunchKit
+### Optional UX and Audit Support
 
-Build Award recipients unlock the Stellar LaunchKit at the Testnet milestone, which can include:
-
-- Audit credits
-- UX audits and user testing
-- Infrastructure offers
-- Connections to accelerators and other SDF funding mechanisms
+Awarded teams may receive optional support during the award process, such as a UX audit and user testing. Security audits are handled by the separate **Audit Bank** program (the Soroban Security Audit Bank): SDF covers up to 100% of the audit cost for eligible projects, with a 5% refundable initial co-pay. Audit costs are an excluded budget line — request Audit Bank coverage as a standalone application when you're nearly mainnet-ready, not as part of a tranche.
 
 ---
 
@@ -117,7 +112,7 @@ Build Award recipients unlock the Stellar LaunchKit at the Testnet milestone, wh
 2. **Eligibility review.** A panel evaluates your submission for potential value to the Stellar ecosystem, eligibility, and team capability.
 3. **Invitation to Build Award round.** If you pass, you may be invited to submit a full Build Award application in an upcoming round.
 4. **Full submission.** Fill out the Build Award form on the SCF website. You can save progress and return.
-5. **Prescreening.** SCF team members review your submission at a high level. Referred submissions receive expedited handling.
+5. **Prescreening.** SCF team members review your submission at a high level for completeness and eligibility. All submissions — referred or not — go through this check.
 6. **Panel or community review.** Depending on the track:
    - Integration and RFP: Reviewed by a delegate panel.
    - Open: Panel evaluates ecosystem value, technical feasibility, and team capability, then eligible projects go to community vote via Neural Quorum Governance.
@@ -125,17 +120,13 @@ Build Award recipients unlock the Stellar LaunchKit at the Testnet milestone, wh
 
 ### Referral Pathway (New in 7.0)
 
-Trusted ecosystem participants — primarily SCF Pilots and SDF staff, as well as ambassadors, alumni, and ecosystem partners — can refer incoming teams. Referred teams receive:
+Approved, onboarded ecosystem participants — community members, Ambassadors, Navigators, Pilots, ecosystem partners, and SDF personnel — can refer incoming teams via a unique referral code on the Interest Form. A referral surfaces your project and provides context, but it confers **no advantage**: it does not bypass review, guarantee acceptance, or speed up decisions. Referred and non-referred submissions go through the same prescreen and evaluation.
 
-- Stronger trust signals during review
-- Faster time-to-decision
-- Referrers earn recognition and financial incentives tied to team success
-
-Teams without referrals enter the standard pipeline and go through prescreening where the SDF confirms the application is complete and meets core eligibility criteria.
+Referrers may earn a discretionary reward of up to 1% of the awarded budget (max 6 per cycle), paid only on final-tranche disbursement. Current SDF employees are not eligible for referral rewards.
 
 ### Build Award Rounds
 
-Rounds run approximately every **6 weeks**. Check [communityfund.stellar.org/awards](https://communityfund.stellar.org/awards) for current deadlines.
+Multiple rounds run on a published schedule. Check the [SCF Dashboard](https://communityfund.stellar.org/awards) at [communityfund.stellar.org/awards](https://communityfund.stellar.org/awards) for current rounds and deadlines.
 
 ---
 
@@ -146,13 +137,13 @@ Rounds run approximately every **6 weeks**. Check [communityfund.stellar.org/awa
 | Area | SCF 6.0 | SCF 7.0 |
 |------|---------|---------|
 | **Tracks** | Single Build Award track | Three specialized tracks: Integration, Open, RFP |
-| **Early-stage support** | Kickstart (5-day bootcamp, up to $15K) | Instawards (decentralized, ambassador-led, up to $15K) |
+| **Early-stage support** | Kickstart (5-day bootcamp, up to $15K) | Instawards (Ambassador-Chapter-led; $1,000–$5,000 initial, $15K aggregate lifetime cap) |
 | **Intake process** | Direct submission to Build Award rounds | Interest Form first, then invitation to Build Award round |
 | **Referral system** | None | Verified referral pathway with incentives |
 | **Prescreening** | Manual review only | SDF prescreening for completeness and eligibility |
 | **Tranche structure** | Milestone-based (MVP, Testnet, Mainnet) | Same three milestones with four explicit tranches: T0 (10% automatic) / T1 (20%) / T2 (30%) / T3 (40%) |
-| **Final milestone** | Mainnet deployment | Mainnet deployment **plus UX readiness** |
-| **Post-launch support** | Limited (LaunchKit, accelerator connections) | Growth Hack program, BD support, Launch Weeks, investment access |
+| **Final milestone** | Mainnet deployment | Mainnet Launch (or equivalent) — deployment, docs, SDK, monitoring, go-live metrics |
+| **Post-launch support** | Limited (accelerator connections) | Growth Hack, Public Goods Award, Stellar Liquidity Award, plus bridges to SDF Marketing Grants / Matching Fund |
 | **Lifetime funding cap** | Up to $150K | Up to $150K standard, up to $300K case-by-case |
 | **Governance** | Category Delegate Panels | Track-specific panels + community vote for Open Track |
 
@@ -165,8 +156,8 @@ Rounds run approximately every **6 weeks**. Check [communityfund.stellar.org/awa
 | **3.0** (Rounds 8-11) | 2021-2022 | Iterative community feedback loops. Awards up to $100K. |
 | **4.0** (Rounds 12-19) | 2022-2023 | Soroban era. 10% Proof of Intent upfront, 90% after community vote. Rapid round cadence. |
 | **5.0** (Rounds 20+) | 2023-2024 | Activation Award + Community Award model. Neural Quorum Governance introduced. |
-| **6.0** | 2024-2025 | Merged into single Build Award (up to $150K). Kickstart bootcamp. Category Delegate Panels. LaunchKit. |
-| **7.0** | 2026-present | Three specialized tracks. Instawards. Referral system. SDF prescreening. UX readiness gate. Growth Hack. |
+| **6.0** | 2024-2025 | Merged into single Build Award (up to $150K). Kickstart bootcamp. Category Delegate Panels. |
+| **7.0** | 2026-present | Three specialized tracks. Instawards. Referral system. SDF prescreening. Growth Hack. |
 
 ---
 
@@ -250,8 +241,8 @@ Before reaching the review panel, submissions must clear prescreening:
 
 **After you submit:**
 
-- **Seek a referral.** If you know Pilots, SDF staff, alumni who completed their deliverables, ambassadors, or ecosystem partners, ask them to refer you through the verified referral pathway. This gives your application a trust signal and faster review.
-- **Prepare for UX readiness.** Remember that the final tranche now requires functional interfaces and usable onboarding — not just a mainnet deployment. Plan for UX from the start, not as an afterthought.
+- **Seek a referral.** If you know approved Referrers — community members, Ambassadors, Navigators, Pilots, or ecosystem partners — ask them to refer you via the unique referral code on the Interest Form. A referral adds context and a trust signal, but it does not bypass review or speed up decisions.
+- **Plan for usable UX.** A functional, usable interface and clear onboarding are part of a credible mainnet launch, and UX work is allowable budget. A UX audit and user testing may be offered as optional support during the award process. Plan for UX from the start, not as an afterthought.
 - **Plan for growth.** SCF 7.0 offers post-launch support for teams that demonstrate traction. Think beyond launch: what are your adoption targets, growth loops, and metrics?
 
 ---
@@ -260,11 +251,11 @@ Before reaching the review panel, submissions must clear prescreening:
 
 SCF 7.0 extends well beyond the initial Build Award for teams that ship and gain traction:
 
-- **Growth Hack** — Targeted funding and support for user acquisition experiments and repeatable growth loops.
-- **Launch Weeks** — Coordinated ecosystem-wide launch events for visibility.
-- **BD and go-to-market support** — Strategic introductions and go-to-market sprint assistance.
-- **Agency, distribution, and investment access** — Introductions to marketing partners, ecosystem distribution channels, and investor networks.
-- **Additional Build Awards** — After completing all tranches, teams with significant traction can apply for subsequent awards.
+- **Growth Hack** — A structured cohort competition for live mainnet projects, focused on user acquisition and repeatable growth loops.
+- **Public Goods Award** — Up to $50K XLM per proposal per quarter for ecosystem public goods (NQG-governed, invitation-only).
+- **Stellar Liquidity Award** — Up to $100K total for audited mainnet financial protocols (supplemental funding gated on sustained TVL).
+- **SDF Marketing Grants / Matching Fund** — Bridges to broader SDF go-to-market and investment funding for projects with traction.
+- **Additional Build Awards** — Teams with significant traction can apply for subsequent awards, subject to the lifetime cap.
 
 Only projects with **live mainnet deployments and verifiable on-chain usage** qualify for post-launch support.
 

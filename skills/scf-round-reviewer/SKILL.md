@@ -1,6 +1,6 @@
 ---
 name: scf-round-reviewer
-description: "Review and rank an entire SCF round end-to-end from a CSV export. Supports Open Track, Integration Track, and RFP Track with track-specific scoring dimensions. Reads submission data directly from an Airtable CSV, auto-detects columns, categorizes, runs parallel batch reviews, cross-batch calibration, and final ranking. All output is markdown."
+description: "Review and rank an entire SCF round end-to-end from a CSV export. Supports Open Track, Integration Track, and RFP Track with track-specific scoring dimensions. Reads submission data directly from an Airtable CSV, auto-detects columns, categorizes, runs parallel batch reviews, cross-batch calibration, and final ranking. All output is markdown. Use when you have a CSV export of an SCF Build Award round and need to review, score, and rank every submission."
 ---
 
 # SCF Round Reviewer
@@ -22,19 +22,19 @@ These provide domain-specific knowledge that significantly affects scoring quali
 
 2. **OpenZeppelin Skills** (`OpenZeppelin/openzeppelin-skills`) — Smart contract security patterns, Stellar contract setup/upgrades. Use this knowledge when evaluating:
    - Smart contract architecture: Are contracts following security best practices?
-   - RFP Track: The C-Address Tooling RFP specifically requires OpenZeppelin Smart Account standard integration
+   - RFP Track: e.g. the current "OZ accounts policy builder" RFP centers on OpenZeppelin's accounts/policy tooling, so this knowledge is directly relevant when an RFP names OpenZeppelin standards. (RFP names rotate quarterly — read the live spec in Phase 0.5 to confirm which RFPs are open.)
    - Budget reasonableness: Is the contract complexity consistent with the budget and timeline?
 
 If either skill is missing, warn the user and recommend installing before proceeding. See CLAUDE.md for installation instructions.
 
 ### Files Required
 - A CSV file in `data/` exported from the Airtable submissions table
-- Review skill definitions in `.claude/skills/`:
-  - `scf-reviewer.md` — Core review framework with track-specific weightings
-  - `scf-prescreen-checker.md` — 5-area prescreen simulation
-  - `scf-budget-builder.md` — Budget validation with category benchmarks
-  - `scf-competitor-analyst.md` — Competitive landscape analysis
-  - `fetch-external-doc.md` — URL resolution for Google Docs, Drive PDFs, GitHub, Notion, IPFS
+- The sibling review skills in this repo (each at `skills/<name>/SKILL.md`):
+  - `../scf-reviewer/SKILL.md` — Core review framework with track-specific weightings
+  - `../scf-prescreen-checker/SKILL.md` — 5-area prescreen simulation
+  - `../scf-budget-builder/SKILL.md` — Budget validation with category benchmarks
+  - `../scf-competitor-analyst/SKILL.md` — Competitive landscape analysis
+  - `../fetch-external-doc/SKILL.md` — URL resolution for Google Docs, Drive PDFs, GitHub, Notion, IPFS
 
 ### CSV Column Auto-Detection
 
@@ -56,7 +56,7 @@ Use Python's `csv.DictReader` to parse the CSV. Key parsing notes:
 
 The technical architecture column often contains URLs to detailed docs (Google Docs, Google Drive PDFs, GitHub repos, Notion pages). These contain critical technical detail that significantly affects Technical Depth and Spec Compliance scores.
 
-**Follow the `fetch-external-doc` skill (`.claude/skills/fetch-external-doc.md`) for full URL resolution instructions.** Key points:
+**Follow the `fetch-external-doc` skill (`../fetch-external-doc/SKILL.md`) for full URL resolution instructions.** Key points:
 
 - **Google Docs** (`docs.google.com/document/d/{ID}/...`): **MUST use `curl -sL`**: `curl -sL "https://docs.google.com/document/d/{ID}/export?format=txt" -o /tmp/gdoc_{slug}.txt`. Do NOT use WebFetch.
 - **Google Drive PDFs** (`drive.google.com/file/d/{ID}/...`): **MUST use `curl -sL`**: `curl -sL "https://drive.usercontent.google.com/download?id={ID}&export=download" -o /tmp/gdrive_{slug}.pdf`. Do NOT use WebFetch.
@@ -107,7 +107,9 @@ The RFP specifications are published in the SCF Handbook. Look for them at:
 - `https://stellar.gitbook.io/scf-handbook/scf-awards/build-award/rfp-track` — Primary source for all RFP specs
 - `https://communityfund.stellar.org/rfps` — Fallback (may redirect or 404 depending on site changes)
 - The `Round` column in the CSV tells you which round this is
-- The `track_specifics` column may name the specific RFP category (e.g., "C-Address Tooling & Onboarding")
+- The `track_specifics` column may name the specific RFP category (e.g., for SCF #43 / Q2 2026: "OZ accounts policy builder", "Trustline onboarder", "Passkey UI", "Account Demolisher", or "Contract Source Verification Service")
+
+**RFP names rotate every quarter — never assume which RFPs are open.** Always fetch the live spec and read the current "Current Open RFPs" list before reviewing. The examples above are the Q2 2026 / SCF #43 set; a later round will have a different list.
 
 Fetch the gitbook RFP page using WebFetch. If that fails, try the communityfund.stellar.org URL. If the main page doesn't have the full spec, follow links to individual RFP detail pages.
 
@@ -130,26 +132,27 @@ Write `reviews/00-rfp-spec.md` containing the extracted spec for each RFP catego
 
 For each RFP category, create a checklist of specific requirements that every submission in that category must address. Example:
 
+Example (using a current SCF #43 / Q2 2026 RFP — **build this from the live spec, do not copy these items verbatim**, as RFPs rotate quarterly):
+
 ```markdown
-## RFP: C-Address Tooling & Onboarding
+## RFP: Trustline onboarder (Q2 2026 / SCF #43)
 
 ### Required Deliverables
-- [ ] Reference implementation for funding C-addresses without G-address
-- [ ] SDK or library for developers to integrate
-- [ ] Documentation and integration guide
-- [ ] Testnet deployment
+- [ ] A well-defined standard for trustline authorization (leveraging CAP-73 or equivalent) that custodians, wallets, exchanges, and issuers can implement predictably
+- [ ] Reference implementation demonstrating the standard end-to-end (issuer-side authorization + recipient-side activation)
+- [ ] Default landing-page / "activate assets" flow for brokers/CEXes, open source and customizable
 
 ### Technical Requirements
-- [ ] Must work with Soroban smart accounts
-- [ ] Must not require end-user to manage a G-address
-- [ ] Must be open source
+- [ ] Supports the full institutional asset lifecycle for classic Stellar assets
+- [ ] MiCA-compliance considerations for regulated issuers
+- [ ] Open source (full repository, permissive license)
 
 ### Success Criteria
-- [ ] Working demo on testnet
-- [ ] At least one integration partner testing it
+- [ ] Working reference implementation
+- [ ] Coordination/buy-in from custodians, wallets, exchanges, or issuers
 ```
 
-This checklist is passed to every review agent for their batch.
+This checklist is passed to every review agent for their batch. **Always regenerate it from the live RFP spec for the round you're reviewing** — the example above is the Q2 2026 set and will be stale in later rounds.
 
 ---
 
@@ -201,7 +204,7 @@ Write `reviews/00-master-index.md` containing:
 ### Step 1.6: Identify Special Cases
 Flag these before review starts:
 - Submissions at the $150K budget cap (need extra budget scrutiny)
-- Submissions with referrals (for later referral adjustment)
+- Submissions with referrals (informational metadata only — referrals do NOT adjust scores or ranking)
 - Any submissions with unusual status values
 - For RFP Track: submissions that seem to target a different RFP than expected
 - **Multi-RFP submissions**: If a submission's `track_specifics` field contains multiple RFP categories (comma-separated), flag it in the master index. These submissions should be reviewed once with their primary RFP batch, scored against the RFP where they have the strongest alignment, and the review should note coverage (or lack thereof) of secondary RFPs. Report multi-RFP submissions as a finding in the final ranking — the panel needs to decide how to evaluate scope breadth vs. depth.
@@ -223,7 +226,7 @@ Scan these columns for every submission:
 
 ### Step 1.7.2: Fetch Documents
 
-For each URL, follow the resolution rules from `.claude/skills/fetch-external-doc.md`:
+For each URL, follow the resolution rules from `../fetch-external-doc/SKILL.md`:
 
 | URL Type | How to Fetch |
 |---|---|
@@ -472,20 +475,19 @@ Rules:
 
 **Executor**: Leader agent
 
-### Step 5.1: Compute Referral Adjustments
-For submissions with a referral:
-- Referral present: +0.25 on Community Readiness (Open Track) / Ecosystem Commitment (Integration Track) / relevant dimension (RFP Track)
-- Strong referral endorsement: up to +0.5
-- No referral: no adjustment
+### Step 5.1: Do NOT Score Referrals
+Referrals **do not influence** evaluation or funding. The handbook's Referral Program is explicit (§3.1/3.2): a referral "does not guarantee acceptance into SCF, selection, funding, or any other benefit," and referrers must not imply their referral confers any advantage. **Do not add any referral points to any submission's score.** Ranking is purely substance-based.
+
+Track referrers only as informational metadata. The referrer *reward* is a separate, fully discretionary payout (up to **1%** of the awarded budget, aggregate cap of **6 rewards per application cycle**, paid only when the final Build Award tranche is disbursed; current SDF employees are ineligible). It is a payout to the referrer, not a boost to the applicant — keep it out of the ranking.
 
 ### Step 5.2: Write Final Ranking Report
 Write `reviews/01-ranking.md` with these sections:
 
-**Section 1: Ranking WITH Referrer Consideration (Primary)**
-Full table with columns: Rank, Project, Category, Budget, Calibrated Score, Referrer Adj, Final Score, Referrer. For RFP Track: include RFP Category column.
+**Section 1: Ranking (Substance-Only) — PRIMARY**
+This is the ranking. Full table with columns: Rank, Project, Category, Budget, Calibrated Score, Referrer (informational only). For RFP Track: include RFP Category column. The Referrer column is metadata — it must NOT change the order.
 
-**Section 2: Ranking WITHOUT Referrer (Substance-Only)**
-Full table. Note any submissions that change tier between the two rankings.
+**Section 2: Referrer Sidebar (Non-Scoring)**
+A non-scoring reference list of which submissions named an approved referrer, for the SCF team's awareness of potential referrer-reward eligibility. State plainly that these referrals did not influence the ranking and that any referrer reward is a separate discretionary payout (up to 1%, max 6/cycle, final-tranche, SDF employees ineligible).
 
 **Section 3: Do Not Fund — With Specific Feedback**
 For each DO NOT FUND submission:
@@ -514,7 +516,7 @@ Write `reviews/results.csv` — a machine-readable summary of all results. This 
 | `Category` | Financial Protocol / Developer Tooling / Infrastructure / End-User Application |
 | `RFP Category` | (RFP Track only) Which RFP the submission targets |
 | `Budget` | Requested budget as number |
-| `Referrer` | Referrer name or empty |
+| `Referrer` | Referrer name or empty (informational only — does NOT affect the score or ranking) |
 | `Prescreen` | LIKELY PASS / AT RISK / LIKELY FAIL |
 | `Dim 1 Raw` | First scoring dimension raw score (1-5) |
 | `Dim 1 Name` | Name of first dimension (track-dependent) |
@@ -528,9 +530,7 @@ Write `reviews/results.csv` — a machine-readable summary of all results. This 
 | `Dim 5 Name` | Name of fifth dimension |
 | `Dim 6 Raw` | Sixth dimension raw score |
 | `Dim 6 Name` | Name of sixth dimension |
-| `Composite Score` | Normalized score (0-100) |
-| `Referral Adjustment` | Points added for referral |
-| `Final Score` | Composite + referral adjustment |
+| `Composite Score` | Normalized score (0-100) — this is the final substance-only score; referrals do not adjust it |
 | `Recommendation` | FUND / FUND WITH CONDITIONS / DO NOT FUND |
 | `Key Strength` | One-sentence summary |
 | `Key Concern` | One-sentence summary |

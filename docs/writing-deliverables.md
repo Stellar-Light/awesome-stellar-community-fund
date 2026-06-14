@@ -14,12 +14,12 @@ Applicants divide their project into **three milestones** — MVP, Testnet, and 
 
 | Tranche | Budget | When Released |
 |---------|--------|--------------|
-| T0 | 10% | Automatically on award approval |
+| T0 | 10% | On award acceptance, after KYC/KYB clears |
 | T1 | 20% | MVP milestone complete |
 | T2 | 30% | Testnet milestone complete |
 | T3 | 40% | Mainnet milestone complete |
 
-T0 is not a milestone — it's the upfront payment you receive when your project is approved. You do not submit deliverables for T0. Your application defines deliverables for the three milestones (MVP, Testnet, Mainnet), which map to tranche payments T1, T2, and T3.
+T0 is not a milestone — it's the upfront payment you receive when your project is approved. You do not submit deliverables for T0, **but funds are not issued until you complete identity verification.** Every awarded participant must clear KYC (individuals) or KYB (teams — each contributor) before any XLM is paid out; the SCF Build Tranche Completion Form for later tranches is emailed to you once your T0 payment has been sent. (Teams who completed KYC within the last 2 years may not need to repeat it.) Your application defines deliverables for the three milestones (MVP, Testnet, Mainnet), which map to tranche payments T1, T2, and T3.
 
 **A note on milestone names:** MVP, Testnet, and Mainnet are the official milestone names, but they're symbolic. You decide what the specific deliverables are within each milestone. "MVP" doesn't have to mean a traditional minimum viable product, and "Testnet" doesn't have to be exclusively about a testnet deployment. What matters is that each milestone represents a meaningful, verifiable step forward — the deliverables within it should fit your project, not be forced into rigid categories.
 
@@ -27,7 +27,23 @@ Your job is to define concrete deliverables under each milestone that a reviewer
 
 ### Tip: Consider Tightening Your Scope
 
-You can scope your deliverables to whatever your project genuinely requires. That said, before you plan, it's worth asking: **could I tighten this?** Proposals with fewer, more focused deliverables are easier to evaluate and more likely to get funded. A smaller, well-executed award also builds the trust and track record that make follow-up awards much easier to get. The lifetime cap is $150K–$300K, so starting focused doesn't close any doors — it opens them with data instead of promises.
+You can scope your deliverables to whatever your project genuinely requires. That said, before you plan, it's worth asking: **could I tighten this?** Proposals with fewer, more focused deliverables are easier to evaluate and more likely to get funded. A smaller, well-executed award also builds the trust and track record that make follow-up awards much easier to get. Each Build Award is capped at **$150K** worth of XLM, and that's a **lifetime** cap accumulated across all of a project's awards — not per round. (Projects that have already received their full $150K may, on a case-by-case basis, be considered for additional awards up to a lifetime maximum of $300K — that's an exception you'd discuss with the SCF team, not a general option to plan around.) Starting focused doesn't close any doors — it opens them with data instead of promises.
+
+---
+
+## Budget & Eligibility Rules You Must Plan Around
+
+Before structuring deliverables, internalize the hard rules from the handbook's Budget & Deliverable Guidelines. Breaking any of these typically gets a submission flagged at prescreen:
+
+- **6-month timeline cap.** Your project timeline should not exceed 6 months. If your plan needs longer, tighten the scope to fit a fundable first award.
+- **Tranche 1 must be actual development, not planning.** Your technical architecture must already be complete *at the time of application* — mapping out the system is something you do before you submit. Tranche 1 should focus on building (working code interacting with Stellar/Soroban), not research, planning, or system design.
+- **Costs must fund future development, not past work.** Budget items must map to specific deliverables and reflect the real cost of completing those milestones. Reimbursement for past work, unrelated activity, or general operations is not eligible.
+- **Ineligible costs — keep these out of the budget entirely:**
+  - **Audit costs** (covered separately by the Audit Bank for eligible projects)
+  - **Marketing and user-acquisition costs**
+  - **Bounties, token giveaways, or prize pools**
+  - **Legal fees or entity-registration costs**
+  - **Reimbursement for past work** or unrelated activity
 
 ---
 

@@ -23,6 +23,11 @@ This template covers the key sections of a Build Award application. The actual S
 
 **For Integration Track:** Integration partner: [Name of building block / partner]. Eligible list confirmed: [Yes/No — check the current quarter's list]
 
+**For Open Track:** [Novel protocol or infrastructure being built] — plus the two Open Track requirements below.
+
+- **AI-artifact disclosure (required for Open Track):** [Disclose any AI-generated artifacts in your submission or codebase — what was AI-generated, which tools, and how you reviewed/validated it]
+- **Smart-contract open-source plan (required if you ship smart contracts):** [State that your smart-contract code will be open-sourced, under which license, and where it will be published]
+
 **For RFP Track:** Responding to RFP: [Title and link to the specific RFP]
 
 ---
@@ -98,7 +103,7 @@ User does [action]
 
 - Key management: [How private keys are stored and handled]
 - Access control: [Who can call which functions, admin controls]
-- Audit plan: [Internal review + Audit Bank via LaunchKit at T2 — budget dev time for remediation, not audit fees]
+- Audit plan: [Internal review + Soroban Security Audit Bank (applied for separately via an emailed form when you're nearly mainnet-ready) — budget dev time for remediation, not audit fees]
 - Known risks and mitigations: [Relevant attack vectors for your project type]
 
 ### Tech Stack
@@ -246,6 +251,8 @@ User does [action]
 
 > See: [Writing Budgets Guide](writing-budgets.md) for detailed best practices and budget ranges from funded projects
 
+> **Build Award cap:** A single Build Award is up to **$150K (in XLM)**, and that is also the **lifetime cap** across all of a team's Build Awards. Going beyond $150K is an exception, considered only after a project has already received $150K and only case-by-case (up to a $300K lifetime cap). Audit costs are excluded from the budget — they are covered separately by the Soroban Security Audit Bank.
+
 **Total request:** $[X]
 
 ### Cost Breakdown
@@ -304,7 +311,7 @@ The strongest submissions tie their per-tranche budgets directly to the delivera
 - [Growth targets for 3-6 months post-launch]
 - [User acquisition strategy]
 - [Maintenance and support plan]
-- [Interest in SCF post-launch programs: Growth Hack, Launch Weeks, etc.]
+- [Interest in SCF supporting programs once live on mainnet: Growth Hack, Public Goods Award, Stellar Liquidity Award (if an audited financial protocol), etc.]
 
 ---
 

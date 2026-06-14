@@ -1,6 +1,6 @@
 ---
 name: scf-competitor-analyst
-description: "Analyze the competitive landscape for an SCF submission. Identifies similar projects on Stellar and other chains, assesses overlap and differentiation."
+description: "Analyze the competitive landscape for an SCF submission. Identifies similar projects on Stellar and other chains, assesses overlap and differentiation. Use when reviewing or drafting an SCF submission and you need to map similar projects on Stellar and other chains and articulate the differentiation."
 ---
 
 # SCF Competitor Analyst
@@ -62,9 +62,18 @@ For each competitor:
 - **Chain-hopping risk** — Is the team genuinely committed to Stellar or chasing grants?
 - **Market saturation** — Are there already enough projects in this category?
 
+### Integration Track Effort & Scope Check
+
+When the submission is an **Integration Track** project, calibrate your competitive read against the handbook's Integration List guidance:
+
+- **A qualifying integration must use at least one [Integration Partner building block](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award/integration-track).** If the project doesn't meaningfully integrate one of these building blocks, it likely isn't an eligible Integration Track submission at all.
+- **Most integrations are small — under roughly 40 hours of work.** They wire an existing building block (wallet, anchor, passkey, etc.) into a product; they don't build new infrastructure. Treat a competitive landscape that implies a multi-month build as a signal the scope (and budget) may be inflated.
+- **Over-scoped budgets get pushed back.** Projects with bloated or over-scoped budgets relative to the integration effort are commonly asked to decrease their budget or resubmit. If comparable integrations exist (on Stellar or elsewhere) that were far cheaper or faster, flag the gap.
+
 ## Reference Links
 
 - [SCF Awards Page](https://communityfund.stellar.org/awards)
-- [SCF Handbook](https://communityfund.stellar.org/handbook)
+- [SCF Handbook](https://stellar.gitbook.io/scf-handbook)
 - [Stellar Expert](https://stellar.expert)
-- [Build Track](https://communityfund.stellar.org/build)
+- [Build Award](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award)
+- [FAQ](https://stellar.gitbook.io/scf-handbook/additional-support/faq)

@@ -10,8 +10,8 @@ After your Build Award is approved, funding is released in four tranches tied to
 |---------|-------------|--------------|
 | T0 | 10% | Automatically on award approval |
 | T1 | 20% | MVP milestone complete |
-| T2 | 30% | Testnet milestone complete (also unlocks Stellar LaunchKit) |
-| T3 | 40% | Mainnet milestone complete + UX readiness |
+| T2 | 30% | Testnet milestone complete |
+| T3 | 40% | Mainnet Launch (or equivalent) complete |
 
 T0 is paid automatically when your project is approved — no deliverables required. For T1, T2, and T3, you submit your milestone deliverables for review. A reviewer checks that you've completed what you promised in your application. If everything checks out, your payment is released. If not, you'll get feedback on what's missing before you can resubmit.
 
@@ -77,7 +77,7 @@ Your core functionality should be working. This doesn't need to be polished, but
 
 ### T2 — Testnet
 
-Your product should be feature-complete and testable on testnet. This is also when you unlock the Stellar LaunchKit.
+Your product should be feature-complete and testable on testnet. Around this near-mainnet stage, eligible projects can also request an Audit-Bank-covered audit (see the bullet below).
 
 **What reviewers expect:**
 - Full feature set deployed to testnet
@@ -89,7 +89,7 @@ Your product should be feature-complete and testable on testnet. This is also wh
 - All smart contracts deployed to testnet with addresses listed
 - Evidence of community feedback (Discord thread, feedback form responses, beta tester comments)
 - Test suite results (unit tests, integration tests)
-- Security review or audit report (if applicable — LaunchKit audit credits become available here)
+- Security review or audit report (if applicable — eligible projects can request an Audit-Bank-covered audit around this near-mainnet stage; SDF covers up to 100% with a 5% refundable initial co-pay)
 
 **Common T2 delays:**
 - Testnet deployment isn't accessible or is broken
@@ -97,9 +97,9 @@ Your product should be feature-complete and testable on testnet. This is also wh
 - No evidence of testing beyond the team
 - Smart contracts deployed but no interface to interact with them
 
-### T3 — Mainnet + UX Readiness
+### T3 — Mainnet Launch
 
-Your product must be live on mainnet and usable by real users. SCF 7.0 added UX readiness as an explicit requirement — deployment alone is not enough.
+The T3 end goal is a functional project live on Stellar mainnet (or equivalent). Reviewers expect the mainnet deliverables — deployment, documentation, SDK, monitoring, and go-live metrics — and a product that real users can actually use. Usable UX is part of a credible launch (and UX work is allowable budget), but it is not a separate payout gate.
 
 **What reviewers expect:**
 - All contracts and infrastructure deployed to mainnet

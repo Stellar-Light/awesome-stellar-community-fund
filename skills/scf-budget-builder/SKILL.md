@@ -47,7 +47,7 @@ SCF Build Awards use a 10% / 20% / 30% / 40% tranche structure:
 - Total exceeds $150K without strong justification
 - Any line item over 40% of total budget without explanation
 - Marketing line items (SCF funds building, not marketing)
-- Audit fees as a line item (LaunchKit covers this at T2)
+- Audit costs as a line item (covered separately by Audit Bank for eligible projects)
 - Legal fees or entity registration (ineligible)
 - Contingency over 5%
 - Rates significantly above benchmarks
@@ -60,7 +60,7 @@ SCF Build Awards use a 10% / 20% / 30% / 40% tranche structure:
 - Rates and effort are explicit
 - Tranche allocation roughly follows 10/20/30/40
 - Budget proportional to scope complexity
-- LaunchKit benefits factored in
+- Audit costs excluded from budget (covered separately by Audit Bank for eligible projects)
 - No ineligible expenses
 
 ## Reference Links

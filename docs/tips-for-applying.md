@@ -9,7 +9,7 @@
 Before you start writing, understand the landscape:
 
 - **20.2% of Build Award submissions get funded.** Four out of five don't.
-- **18.7% fail at prescreen** — rejected before a reviewer ever sees them. Common causes: incomplete submissions, no Stellar integration, ineligible teams.
+- **A meaningful share fail at prescreen** — rejected before a reviewer ever sees them (≈18.7% in our dataset). Common causes: incomplete submissions, no Stellar integration, ineligible teams.
 - **Rejected submissions had higher average budgets ($102K)** than awarded ones ($93K). Asking for more doesn't help — right-sizing to scope does.
 - **The median funded Build Award is $93,700.** The middle 50% fall between $60K and $128K.
 
@@ -57,11 +57,11 @@ Funded submissions share a consistent deliverable format. Use it:
 
 **Aim for 2–4 deliverables per milestone.** Each one should be independently verifiable. If a reviewer can't confirm completion from outside your team, rewrite it.
 
-**MVP must be technical.** Your first milestone is your proof of intent — it needs to include code interacting with Stellar or Soroban. Not a design doc, not a research phase, not an environment setup.
+**MVP must be technical.** The MVP is Tranche #1 (the 10% paid on acceptance is Tranche #0) — it needs to include code interacting with Stellar or Soroban. Not a design doc, not a research phase, not an environment setup.
 
 **Show clear progression.** Each milestone builds on the last: MVP → Testnet → Mainnet. Avoid vague milestones like "continue development" or "further research."
 
-**Mainnet must include UX readiness.** Since SCF 7.0, the final milestone requires functional interfaces and usable onboarding — not just a mainnet deployment.
+**Make the mainnet launch usable.** A functional, usable interface and clear onboarding are part of a credible mainnet launch — the T3 end goal is a working project real users can actually use, not just a bare deployment. UX work is allowable budget (and a UX audit may be offered as optional support), so plan for it.
 
 See [Writing Deliverables](writing-deliverables.md) for full guidance and category-specific examples.
 
@@ -87,7 +87,7 @@ This doesn't mean asking for less guarantees funding. It means that inflated bud
 
 **Consider starting smaller.** A focused $50K–$80K proposal with clear deliverables is easier to approve than a sprawling $150K plan. Returning with traction data for a second award is a proven path — the lifetime cap is $150K–$300K, so starting smaller doesn't close any doors.
 
-**Factor in LaunchKit.** Build Award recipients unlock audit credits and other resources at T2. Don't budget $30K for an external audit if you'll get credits through LaunchKit.
+**Exclude audit costs from your budget.** Security audits are covered separately by the **Audit Bank** for eligible projects (SDF covers up to 100%, with a 5% refundable initial co-pay) — so don't budget $30K for an external audit. The Audit Bank is a standalone application, not a tranche perk.
 
 See [Writing Budgets](writing-budgets.md) for detailed guidance, rate benchmarks, and real budget examples from funded projects.
 
@@ -131,7 +131,7 @@ Panelists notice when teams avoid hard questions about regulation and security. 
 
 **Outline regulatory risks and your strategy.** If your project handles user funds, touches KYC/AML, or operates in regulated markets, don't pretend those challenges don't exist. Name the risks and describe your approach — even if the approach is "we're consulting with legal counsel and will implement [specific framework]."
 
-**Plan for security audits.** If your project involves smart contracts that handle value, mention your audit plan. Internal review, external audit, bug bounty — whatever fits your scope and budget. Remember that LaunchKit provides audit credits at T2.
+**Plan for security audits.** If your project involves smart contracts that handle value, mention your audit plan. Internal review, external audit, bug bounty — whatever fits your scope. Remember that the external audit itself is covered separately by the Audit Bank for eligible projects (not part of your budget); you can still budget dev time for fixing audit findings.
 
 **Handle key management explicitly.** How are private keys stored? Who has access? What's your multisig setup? Reviewers look for this in the security section of your architecture.
 
@@ -202,10 +202,10 @@ To resubmit successfully, you must demonstrate significant improvement: stronger
 - [ ] Traction evidence is specific and verifiable (or demand signals are concrete)
 - [ ] Deliverables use the structured format (description, completion criteria, date, budget)
 - [ ] MVP milestone includes a technical deliverable interacting with Stellar/Soroban
-- [ ] Mainnet milestone includes UX readiness (onboarding, documentation, usability)
+- [ ] Mainnet launch is usable (onboarding, documentation, working interface)
 - [ ] Budget is bottom-up with rates, effort, and per-tranche breakdown
 - [ ] Budget is proportional to scope (not inflated to hit $150K)
-- [ ] LaunchKit benefits are factored in and not double-counted
+- [ ] Audit costs are excluded from the budget (covered separately by the Audit Bank for eligible projects)
 - [ ] No large marketing or contingency line items
 - [ ] Every link in the submission works
 - [ ] Submission is self-contained — doesn't require external context

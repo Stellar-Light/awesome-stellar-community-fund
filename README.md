@@ -2,22 +2,33 @@
 
 A collection of tools, skills, and reference materials for participating in the [Stellar Community Fund](https://communityfund.stellar.org) (SCF).
 
+## Install as a Claude Code plugin
+
+The skills in this repo are packaged as a [Claude Code](https://docs.claude.com/en/docs/claude-code) plugin:
+
+```
+/plugin marketplace add lumenloop/awesome-stellar-community-fund
+/plugin install awesome-stellar-community-fund@awesome-scf
+```
+
+This makes all ten SCF skills available in your session. You can also point any AI tool directly at an individual `skills/<name>/SKILL.md`, or read the [`docs/`](docs/) guides on their own.
+
 ## What's Inside
 
 ### [skills/](skills/)
 
 Reusable AI skills for SCF applications — reviewing, drafting, budgeting, prescreening, and more:
 
-- **[scf-round-reviewer](skills/scf-round-reviewer.md)** — Review and rank an entire SCF round end-to-end from a CSV export. Supports Open Track, Integration Track, and RFP Track with track-specific scoring. Orchestrates parallel batch reviews, calibration, and final ranking.
-- **[scf-reviewer](skills/scf-reviewer.md)** — Review Build Award applications with structured evaluation across integration fit, architecture, team, traction, budget, and ecosystem commitment.
-- **[fetch-external-doc](skills/fetch-external-doc.md)** — Fetch external documents linked in submissions — Google Docs, Google Drive PDFs, GitHub, Notion, IPFS. Uses `curl` for reliable Google Docs/Drive fetching.
-- **[scf-prescreen-checker](skills/scf-prescreen-checker.md)** — Simulate the prescreen filter that eliminates 18.7% of submissions before human review.
-- **[scf-budget-builder](skills/scf-budget-builder.md)** — Build bottom-up budgets with rates, per-deliverable breakdowns, and tranche mapping.
-- **[scf-competitor-analyst](skills/scf-competitor-analyst.md)** — Research the competitive landscape and articulate differentiation.
-- **[scf-submission-drafter](skills/scf-submission-drafter.md)** — Draft a complete Build Award application interactively, section by section.
-- **[scf-interest-form-drafter](skills/scf-interest-form-drafter.md)** — Draft a strong Interest Form to get invited to apply.
-- **[scf-tranche-reporter](skills/scf-tranche-reporter.md)** — Write tranche submission reports with deliverable evidence and completion documentation.
-- **[scf-referral-preparer](skills/scf-referral-preparer.md)** — Prepare materials for an SCF referral from a Pilot or SDF staff member.
+- **[scf-round-reviewer](skills/scf-round-reviewer/SKILL.md)** — Review and rank an entire SCF round end-to-end from a CSV export. Supports Open Track, Integration Track, and RFP Track with track-specific scoring. Orchestrates parallel batch reviews, calibration, and final ranking.
+- **[scf-reviewer](skills/scf-reviewer/SKILL.md)** — Review Build Award applications with structured evaluation across integration fit, architecture, team, traction, budget, and ecosystem commitment.
+- **[fetch-external-doc](skills/fetch-external-doc/SKILL.md)** — Fetch external documents linked in submissions — Google Docs, Google Drive PDFs, GitHub, Notion, IPFS. Uses `curl` for reliable Google Docs/Drive fetching.
+- **[scf-prescreen-checker](skills/scf-prescreen-checker/SKILL.md)** — Simulate the SCF team's manual prescreen (completeness + eligibility) before you submit.
+- **[scf-budget-builder](skills/scf-budget-builder/SKILL.md)** — Build bottom-up budgets with rates, per-deliverable breakdowns, and tranche mapping.
+- **[scf-competitor-analyst](skills/scf-competitor-analyst/SKILL.md)** — Research the competitive landscape and articulate differentiation.
+- **[scf-submission-drafter](skills/scf-submission-drafter/SKILL.md)** — Draft a complete Build Award application interactively, section by section.
+- **[scf-interest-form-drafter](skills/scf-interest-form-drafter/SKILL.md)** — Draft a strong Interest Form to get invited to apply.
+- **[scf-tranche-reporter](skills/scf-tranche-reporter/SKILL.md)** — Write tranche submission reports with deliverable evidence and completion documentation.
+- **[scf-referral-preparer](skills/scf-referral-preparer/SKILL.md)** — Prepare materials for an SCF referral from an approved Referrer (Ambassador, Navigator, Pilot, partner, or SDF personnel).
 
 > **For a turnkey review setup**, see [scf-review-boilerplate](https://github.com/lumenloop/scf-review-boilerplate) — drop a CSV and run.
 
@@ -34,12 +45,12 @@ See [docs/README.md](docs/README.md) for a suggested reading order.
 - **[Interest Form Tips](docs/interest-form-tips.md)** — How to write a strong Interest Form and get invited to apply.
 - **[Submission Template](docs/submission-template.md)** — Fill-in-the-blank Build Award application template connecting all guides.
 - **[Technical Architecture](docs/technical-architecture.md)** — Best practices for the architecture section: diagrams, Soroban details, data flow, security.
-- **[Writing Deliverables](docs/writing-deliverables.md)** — How to structure deliverables across the four-tranche milestone system, with category-specific examples from funded projects.
+- **[Writing Deliverables](docs/writing-deliverables.md)** — How to structure deliverables across the milestone system (three milestones — MVP, Testnet, Mainnet — mapped to four tranches T0–T3), with category-specific examples from funded projects.
 - **[Writing Budgets](docs/writing-budgets.md)** — Bottom-up budget construction, rate benchmarks, tranche mapping, and budget statistics from 215 funded Build Awards.
 - **[Proving Traction](docs/proving-traction.md)** — On-chain metrics, usage data, demand signals, and adoption targets.
-- **[UX Readiness](docs/ux-readiness.md)** — The T3 UX readiness gate: what it means and how to plan for it.
+- **[UX Readiness](docs/ux-readiness.md)** — UX expectations for funded builds and the optional UX support available — not a hard payout gate.
 - **[Submitting Tranches](docs/submitting-tranches.md)** — How to submit tranche deliverables for review: what to include, format, and common delays.
-- **[Post-Launch and Growth](docs/post-launch-growth.md)** — Growth Hack, Launch Weeks, BD support, and additional Build Awards.
+- **[Post-Launch and Growth](docs/post-launch-growth.md)** — Growth Hack, Public Goods Award, Stellar Liquidity Award, BD support, and additional Build Awards.
 - **[RFP Response Guide](docs/rfp-response-guide.md)** — RFP-specific guidance: spec compliance, DX, maintenance, and domain expertise.
 
 ## SCF Official Resources
@@ -48,10 +59,10 @@ See [docs/README.md](docs/README.md) for a suggested reading order.
 |---|---|
 | SCF Homepage | [communityfund.stellar.org](https://communityfund.stellar.org) |
 | SCF Handbook | [stellar.gitbook.io/scf-handbook](https://stellar.gitbook.io/scf-handbook) |
-| Build Track | [communityfund.stellar.org/build](https://communityfund.stellar.org/build) |
+| Build Award (Handbook) | [stellar.gitbook.io/scf-handbook/scf-awards/build-award](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award) |
 | Awards & Funded Projects | [communityfund.stellar.org/awards](https://communityfund.stellar.org/awards) |
-| Community Voting | [communityfund.stellar.org/vote](https://communityfund.stellar.org/vote) |
-| FAQ | [communityfund.stellar.org/faq](https://communityfund.stellar.org/faq) |
+| Community Voting (Neural Quorum Governance) | [stellar.gitbook.io/scf-handbook/governance/neural-quorum-governance](https://stellar.gitbook.io/scf-handbook/governance/neural-quorum-governance) |
+| FAQ | [stellar.gitbook.io/scf-handbook/additional-support/faq](https://stellar.gitbook.io/scf-handbook/additional-support/faq) |
 | Grants & Funding (SDF) | [stellar.org/grants-and-funding](https://stellar.org/grants-and-funding) |
 
 ## Stellar Developer Resources
@@ -146,7 +157,11 @@ The Stellar Community Fund awards grants to projects that grow the Stellar ecosy
 
 ## Contributing
 
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. In short:
+
 1. Fork the repo and create a feature branch.
-2. Add your resource (skill, template, checklist, etc.) to the appropriate folder.
-3. Update the relevant README with a description of your addition.
+2. Add your resource — skills go in `skills/<name>/SKILL.md`, guides in `docs/`. Keep factual claims aligned with the [SCF Handbook](https://stellar.gitbook.io/scf-handbook).
+3. Update the relevant README, then run `node scripts/validate_skills.mjs`.
 4. Open a pull request.
+
+This project follows a [Code of Conduct](CODE_OF_CONDUCT.md) and is released under the [MIT License](LICENSE).

@@ -1,27 +1,40 @@
 # Post-Launch and Growth Hack Preparation
 
-> SCF 7.0 doesn't end at mainnet launch. Teams that ship and demonstrate traction unlock post-launch support including Growth Hack funding, Launch Weeks, BD support, and investment access. This guide covers how to qualify, how to prepare, and how to set yourself up for growth from day one.
+> SCF 7.0 doesn't end at mainnet launch. Teams that ship and demonstrate traction can move into supporting programs — the Growth Hack competition, the Public Goods Award, and the Stellar Liquidity Award — which bridge toward SDF Marketing Grants and the Matching Fund. This guide covers how to qualify, how to prepare, and how to set yourself up for growth from day one.
 
 ## What's Available After Launch
 
-SCF 7.0 offers several post-launch programs for teams that complete all four tranches and demonstrate real usage:
+SCF 7.0 offers several supporting programs for teams that are live on mainnet and demonstrating real usage. These are separate programs from the Build Award, each with its own application and eligibility rules:
 
 | Program | What You Get |
 |---------|-------------|
-| **Growth Hack** | Targeted funding and support for user acquisition experiments and repeatable growth loops |
-| **Launch Weeks** | Coordinated ecosystem-wide launch events for visibility across the Stellar community |
-| **BD and go-to-market support** | Strategic introductions and go-to-market sprint assistance from SDF |
-| **Agency, distribution, and investment access** | Introductions to marketing partners, ecosystem distribution channels, and investor networks |
-| **Additional Build Awards** | Teams with significant traction can apply for subsequent awards (up to $300K lifetime) |
+| **Growth Hack** | An 8-week, competition-style go-to-market cohort: $20K (in XLM) upfront to each of ~10–15 selected mainnet teams, with the top 5 sharing up to $200K in performance-based awards |
+| **Public Goods Award** | Up to $50K (in XLM) per proposal per quarter for community-maintained public goods (SDKs, infra, governance/data tooling); governed by Neural Quorum Governance via Soroban Governor; invitation-only |
+| **Stellar Liquidity Award** | Up to $100K total (in XLM) for audited financial protocols live on mainnet, to bootstrap initial liquidity ($50K Base + a $50K Supplemental) |
+| **Bridge to further support** | The Growth Hack is designed as a bridge from Build-stage funding toward SDF Marketing Grants and the Matching Fund (Investment Readiness) |
 
-### The Qualification Bar
+### Who Qualifies
 
-Only projects with **live mainnet deployments and verifiable on-chain usage** qualify. This means:
+These are distinct programs, so eligibility differs by program (see each program's official rules in the SCF Handbook). What they share is that they target projects **live on Stellar mainnet with verifiable on-chain usage** — they are not gated on having completed all four Build tranches.
 
-- Your product must be deployed on Stellar mainnet (not just testnet)
-- You must have completed all four tranches of your Build Award
-- You must show real, organic on-chain activity (not manufactured or bot-driven)
-- Usage must be verifiable — reviewers will check block explorers and your public metrics
+In general, expect to need:
+
+- A product deployed on Stellar mainnet (not just testnet)
+- Real, organic on-chain activity (not manufactured or bot-driven)
+- Usage that is verifiable — your public metrics and dashboards should hold up to scrutiny
+- For financial protocols: a completed security audit with vulnerabilities fixed (required for both Growth Hack and the Liquidity Award)
+
+#### Growth Hack eligibility
+
+To apply for the Growth Hack, a company must:
+
+- Be a financial protocol or application **live on Stellar mainnet**
+- Have completed **KYC and sanctions screening** with SDF within the past two years
+- Have **no other active grants** from SDF
+- If a financial protocol, have completed **at least one security audit** with any identified vulnerabilities fixed
+- If using Soroban, use **SAC tokens**
+
+There is no "completed all four tranches" requirement.
 
 ---
 
@@ -70,7 +83,7 @@ Pick the model that fits your product. You don't need all of them — you need o
 
 ### 3. Plan User Acquisition Experiments
 
-Growth Hack funding supports experiments. Come prepared with hypotheses you want to test.
+The Growth Hack is a structured user-acquisition competition, not free-form experiment funding — but the discipline of running measurable acquisition experiments is exactly what the program rewards. Come prepared with concrete acquisition tactics you can execute and measure inside an 8-week window (a 4-week acquisition campaign followed by 4 weeks of retention).
 
 **Example experiments:**
 - "If we add referral rewards (0.5% of referred user's first transaction), we expect 20% of users to refer at least one person within 30 days."
@@ -97,16 +110,27 @@ Don't bolt referrals on later. Design them into your core flows:
 
 The Stellar community is your first distribution channel. Build relationships during your Build Award so you have an audience at launch:
 
-- Share progress updates in the Stellar Developer Discord (#scf-general, #build)
+- Share progress updates in the Stellar Developer Discord (#scf-general, #projects)
 - Write devlog posts about what you're learning building on Soroban
 - Contribute to ecosystem discussions — help other builders, answer questions
 - Participate in community calls and AMAs
 
 ---
 
-## Preparing Your Growth Hack Application
+## How the Growth Hack Works
 
-When you're ready to apply for Growth Hack support, you'll need to demonstrate:
+The Growth Hack runs as a quarterly cohort competition rather than open-ended funding. Understanding its shape helps you apply and plan:
+
+- **Cohort selection** — Each cohort targets **10–15 companies** already live on Stellar mainnet.
+- **Upfront award** — Every selected team receives **$20K (in XLM)** upfront to fund its user-acquisition campaign.
+- **8-week campaign** — A **4-week acquisition campaign** followed by a **4-week retention campaign**, preceded by a preparation phase (workshops, strategy, on-chain + off-chain dashboards).
+- **Performance pool** — After the acquisition campaign, the **top 5** teams share a performance-based pool of **up to $200K (in XLM)**. The pool size scales with the cohort's combined Weekly Active Accounts growth.
+- **Two performance tranches with a retention gate** — A top-5 team's performance award is split **50/50 across tranches 2 and 3**. The second 50% (tranche 3) is paid only if average WAA and weekly transaction volume stay **within 30% of competition levels** (no more than a 70% decline) through the 4-week retention period; if metrics drop more than 70%, the third tranche is not paid.
+- **Judging metrics** — Top-5 ranking is based on three measured increases over the campaign: **Weekly Active Accounts (WAA)**, **weekly transaction volume**, and **weekly TVL**.
+
+### Preparing Your Growth Hack Application
+
+When you apply, you'll need to demonstrate:
 
 ### 1. Traction Evidence
 
@@ -119,17 +143,17 @@ Show that your product is live and being used:
 | Retention | Are users coming back? Show cohort data. |
 | Product usage | Core action completion rate, session frequency |
 
-### 2. Growth Hypotheses
+### 2. A Credible Acquisition Plan
 
-Present 2-3 specific growth experiments you want to run with Growth Hack funding:
+Come prepared with a concrete plan for moving the three judged metrics (WAA, weekly transaction volume, weekly TVL) during the campaign window:
 
 **Format:**
-- **Hypothesis:** [What you believe will drive growth]
-- **Experiment:** [What you'll do]
-- **Metric:** [How you'll measure success]
-- **Timeline:** [How long the experiment runs]
-- **Budget:** [What it costs]
-- **Success threshold:** [What number means it worked]
+- **Target audience / channel:** [Who you'll reach and where]
+- **Acquisition tactic:** [What you'll do — incentives, ads, partnerships, content, quests]
+- **Metric moved:** [Which of WAA / weekly txn volume / weekly TVL it drives]
+- **Timeline:** [How it fits the 4-week acquisition window]
+- **Budget:** [How you'll spend the $20K upfront award]
+- **Retention plan:** [How you'll keep metrics within 30% of campaign levels through the retention phase]
 
 ### 3. Unit Economics (If Applicable)
 
@@ -148,20 +172,37 @@ If experiments succeed, how do you scale them?
 
 ---
 
-## Launch Weeks
+## Public Goods Award
 
-Launch Weeks are coordinated ecosystem events where multiple SCF projects launch simultaneously for shared visibility. To participate:
+If your project is community-maintained infrastructure rather than a commercial product — an SDK, an indexer or data dashboard, governance or security tooling — the **Public Goods Award** may fit better than the Growth Hack.
 
-- **Have a mainnet-ready product** — Launch Weeks are for live products, not demos
-- **Prepare launch materials** — Blog post, demo video, social media content, documentation
-- **Coordinate with SDF** — Express interest through your SCF contact after completing T3
-- **Be ready for traffic** — Your product should handle a spike in visitors without breaking
+- **Amount:** Up to **$50K (in XLM) per proposal, per quarter**. You can reapply each quarter; continued funding depends on prior deliverables being met and demonstrated impact.
+- **Governance:** Funding is decided by **Neural Quorum Governance (NQG)** via Soroban Governor — SCF verified members (Pilot role or higher) propose and vote on proposals.
+- **How to apply:** It is **invitation-only**. There is no open application form. If you meet the eligibility requirements, watch the #scf-governance channel in the Stellar Developers Discord for the next review period and reach out to the SCF team.
+- **Eligibility note:** The project must not have an existing/planned self-sustaining revenue model, and must have no active SDF grant or outstanding Build Award tranches.
+
+---
+
+## Stellar Liquidity Award
+
+For **audited financial protocols live on Stellar mainnet**, the **Stellar Liquidity Award** helps bootstrap initial liquidity.
+
+- **Amount:** Up to **$100K total (in XLM)** — a **$50K Base Liquidity Award** plus, if you qualify, an additional **$50K Supplemental Liquidity Award**.
+- **Initial eligibility:** A fully functioning financial protocol/application deployed on mainnet, a completed valid security audit (from an SDF-recognized firm, vulnerabilities resolved), and passing SDF's KYC / risk assessment / due diligence.
+- **Supplemental gate:** To unlock the additional $50K, you must have already received the initial award and show **7-day consecutive TVL of recognized assets greater than $250K**.
+- **How to apply:** It is **invitation-based** — eligible projects are sent an application form by email. Post-award, you commit to monthly activity reports for 6 months.
+
+---
+
+## Bridge to SDF Marketing Grants and the Matching Fund
+
+These programs are stepping stones, not endpoints. The Growth Hack in particular is designed as a **bridge from Build-stage development funding toward broader marketing and investment support** — namely **SDF Marketing Grants** and the **Matching Fund (Investment Readiness)**. Strong execution in a supporting program is what makes a team a candidate for that next layer of support.
 
 ---
 
 ## Additional Build Awards
 
-Teams that complete all tranches and demonstrate significant traction can apply for subsequent Build Awards. The lifetime cap is $150K standard, with up to $300K available case-by-case for high-traction projects.
+Teams that complete their tranches and demonstrate significant traction can apply for subsequent Build Awards, up to a **$150K lifetime cap** across all awards. Going beyond $150K is an **exception, not a standard option**: only after a project has already received the full $150K may it be considered for additional funding **on a case-by-case basis**, subject to a lifetime accumulated cap of **$300K** (reach out to communityfund@stellar.org, and expect additional legal and business due diligence).
 
 To strengthen a second application:
 - Show clear on-chain growth metrics from your first award
@@ -179,7 +220,7 @@ To strengthen a second application:
 | **MVP (T1)** | Set up analytics infrastructure, instrument core flows, build referral mechanics |
 | **Testnet (T2)** | Launch testnet to community, collect feedback, start building audience, create public dashboard |
 | **Mainnet (T3)** | Launch on mainnet with onboarding flow, begin user acquisition, track metrics, prepare Growth Hack application |
-| **Post-launch** | Apply for Growth Hack, run experiments, apply for Launch Week, pursue additional Build Award if needed |
+| **Post-launch** | Apply for the Growth Hack (or Public Goods / Liquidity Award, if a better fit), run your acquisition campaign, pursue an additional Build Award if needed |
 
 ---
 

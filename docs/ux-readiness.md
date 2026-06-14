@@ -1,12 +1,12 @@
 # UX Readiness
 
-> SCF 7.0 introduced UX readiness as a requirement for the final tranche (T3). Mainnet deployment alone is no longer sufficient — your product must be usable. This guide covers what UX readiness means, what reviewers expect, and how to plan for it from the start.
+> The T3 end goal is a functional project live on Stellar mainnet (40% of your budget) that real users can actually use. UX readiness is the set of expectations and optional support around making your launch usable — not a separate payment gate. This guide covers what UX readiness means, what reviewers expect, and how to plan for it from the start.
 
-## What Changed in SCF 7.0
+## Why UX Readiness Matters
 
-In previous versions, the final milestone was mainnet deployment. Teams could ship a working contract and a bare-bones interface and call it done. SCF 7.0 changed this: the final tranche (40% of your budget) now requires **UX readiness** — clear onboarding flows, functional and tested interfaces, and basic usability validation.
+The final tranche (T3, 40% of your budget) is your Mainnet Launch (or equivalent): deployment, documentation, SDK, monitoring, and go-live metrics. The bar is a functional project live on mainnet — and "functional" means real users can find it, understand it, and complete the core action.
 
-This is a gate. If your product is live on mainnet but unusable by a normal person, you will not receive your final tranche payment.
+A bare-bones interface that only the team can operate undercuts that goal. So treat usable UX — clear onboarding flows, working and tested interfaces, basic usability validation — as a core part of a credible launch, not an afterthought. UX work is allowable budget, and a UX audit plus user testing may be offered as optional support during the award process. It is not a standalone payout gate, but a product no one can actually use is a weak mainnet deliverable.
 
 ---
 
@@ -44,7 +44,7 @@ If the answer is no, your UX is not ready.
 
 ## How to Plan for UX from Day One
 
-The biggest mistake teams make is treating UX as a final polish step. If you wait until T3 to think about usability, you'll either rush it or fail the gate.
+The biggest mistake teams make is treating UX as a final polish step. If you wait until T3 to think about usability, you'll either rush it or ship a mainnet launch that real users can't actually use.
 
 ### Before You Start Building
 
@@ -58,7 +58,7 @@ The biggest mistake teams make is treating UX as a final polish step. If you wai
 
 ### During Testnet (T2)
 
-- **Share your testnet build with the Stellar Discord community.** Ask for feedback in #scf-general or #build. Community feedback is both useful and visible to reviewers.
+- **Share your testnet build with the Stellar Discord community.** Ask for feedback in #scf-general, #general, or #support. Community feedback is both useful and visible to reviewers.
 - **Refine your onboarding flow.** The testnet version should have a complete (even if simplified) onboarding path.
 - **Document known UX gaps.** If something is rough, acknowledge it in your tranche submission and explain how you'll fix it by T3.
 
@@ -125,15 +125,14 @@ If a reviewer gets stuck, confused, or can't complete the core action, UX readin
 
 ---
 
-## Leveraging the Stellar LaunchKit
+## Optional UX and Audit Support
 
-Build Award recipients unlock the Stellar LaunchKit at the Testnet milestone (T2). This can include:
+Awarded teams may be offered optional support during the award process, which can help you ship a more usable launch:
 
-- **UX audits and user testing** — Professional UX review of your product
-- **Audit credits** — For security, which indirectly affects UX (secure flows build user trust)
-- **Infrastructure offers** — Reliable infrastructure means fewer error states for users
+- **UX audit and user testing** — A professional UX review of your product may be offered as part of the award process.
+- **Security audits** — Handled by the separate **Audit Bank** program: SDF covers up to 100% of the audit cost for eligible projects, with a 5% refundable initial co-pay. Secure flows build user trust. Audit costs are an excluded budget line, and the Audit Bank is a standalone application (not tranche-gated).
 
-Request UX audit support through the LaunchKit as early as possible. The feedback you get between T2 and T3 directly helps you pass the UX readiness gate.
+If a UX audit is offered, take it up as early as possible — the feedback you get before mainnet directly improves your launch.
 
 ---
 

@@ -80,7 +80,7 @@ Reviewers notice when security is absent from the architecture. Address:
 - **Key management:** How are private keys stored? (Hardware wallet, custodial service, MPC, client-side?)
 - **Access control:** Who can call which contract functions? How are admin operations gated?
 - **Input validation:** How do you prevent malicious inputs from reaching your contracts?
-- **Audit plans:** Will you seek a security audit? (Build Award recipients can access audit credits through the LaunchKit.)
+- **Audit plans:** Will you seek a security audit? (Eligible Build Award projects can have audits covered by the separate Audit Bank program — SDF covers up to 100% of the cost, with a 5% refundable initial co-pay. Audit costs are not part of your Build budget.)
 - **Known attack vectors:** For DeFi projects, address reentrancy, oracle manipulation, flash loan attacks, and other relevant risks.
 
 ### 5. Infrastructure and Deployment

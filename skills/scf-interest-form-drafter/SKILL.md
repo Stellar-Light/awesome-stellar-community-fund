@@ -160,10 +160,10 @@ Produce a complete Interest Form draft with all fields filled in:
 
 ## Reference Guides
 
-- [Interest Form Tips](../docs/interest-form-tips.md) — Detailed Interest Form guidance
-- [Getting a Referral](../docs/getting-a-referral.md) — How Interest Forms connect to the referral process
-- [Tips for Applying](../docs/tips-for-applying.md) — What reviewers look for at every stage
-- [SCF 7.0 Guide](../docs/scf-7-guide.md) — Track definitions and program overview
+- [Interest Form Tips](../../docs/interest-form-tips.md) — Detailed Interest Form guidance
+- [Getting a Referral](../../docs/getting-a-referral.md) — How Interest Forms connect to the referral process
+- [Tips for Applying](../../docs/tips-for-applying.md) — What reviewers look for at every stage
+- [SCF 7.0 Guide](../../docs/scf-7-guide.md) — Track definitions and program overview
 
 ## Reference Links
 

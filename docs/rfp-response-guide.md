@@ -17,6 +17,22 @@ RFPs are specific tooling, infrastructure, or ecosystem capabilities that have b
 
 ---
 
+## RFP Track Hard Requirements
+
+Beyond the universal Build Award rules, the RFP Track has a specific set of requirements your submission **must** satisfy. These come straight from the handbook's RFP Track requirements list — missing any of them is a fast path to rejection:
+
+- **Address an open RFP from the current quarter.** Your submission must respond to an RFP that is currently open (RFPs are published at the start of each quarter and rotate). You don't have to address every point of the RFP, but you must explain the reasoning behind any limited scope.
+- **Decentralization plan.** Explain clearly how your project will be decentralized — and if it won't be, why not.
+- **Most-recent-stable Stellar stack.** Build on the latest stable release of the Stellar tech stack.
+- **Open licensing + build-in-the-open.** Include your licensing scheme and a commitment to building in the open (full repository, permissive license). Consider open-source/decentralized channels (e.g. Matrix, Mastodon, BlueSky) to communicate with your audience.
+- **Architecture diagram + plain-English stack description.** Provide a high-level visual diagram (Mermaid or similar) *and* a plain-English explanation of your technical stack and the infrastructure it runs on.
+- **User-tracking / protection plan.** Explain your plans for user tracking and the efforts you'll make to limit data collection and protect users.
+- **Community-update commitment.** Commit to regularly updating the community on project status.
+
+Treat these as a checklist to clear *before* you start drafting — a brilliant technical proposal still fails if it skips the decentralization plan, the Mermaid diagram, or the current-quarter RFP requirement.
+
+---
+
 ## Before You Start
 
 ### 1. Read the Full RFP Carefully
@@ -179,6 +195,7 @@ RFP deliverables should emphasize different things than Integration or Open Trac
 
 | Milestone | Tranche | Focus for RFP Projects |
 |-----------|---------|----------------------|
+| **Award acceptance** | **T0 (10%)** | Paid automatically once the award is accepted (after KYC/KYB clears). No deliverables — it's the upfront payment that lets you start work. |
 | **MVP** | **T1 (20%)** | Core functionality proof-of-concept. Show the hardest technical piece working. Functional prototype with basic API/CLI. A developer should be able to try it. |
 | **Testnet** | **T2 (30%)** | Feature-complete on testnet with documentation draft, integration tests, and example usage. |
 | **Mainnet** | **T3 (40%)** | Production-ready with full documentation, CI/CD, published package, and maintenance plan active. |
@@ -189,8 +206,15 @@ RFP deliverables should emphasize different things than Integration or Open Trac
 
 ## Checklist Before You Submit
 
+- [ ] The submission addresses an RFP that is OPEN in the current quarter
 - [ ] Every RFP requirement is addressed with a specific solution
 - [ ] Requirements mapping table is included
+- [ ] Decentralization plan included (or a clear explanation of why not)
+- [ ] Built on the most-recent-stable Stellar tech stack
+- [ ] Open licensing scheme stated + commitment to building in the open
+- [ ] Mermaid (or similar) architecture diagram + plain-English stack/infrastructure description
+- [ ] User-tracking and user-protection plan included
+- [ ] Commitment to regular community status updates
 - [ ] Architecture is described with technical specifics (not just component names)
 - [ ] Prior work in the relevant domain is linked and described
 - [ ] Developer experience is addressed (setup, docs, errors, examples)

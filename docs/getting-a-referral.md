@@ -4,13 +4,12 @@
 
 ## Why Referrals Matter
 
-SCF 7.0 introduced a verified referral pathway as a core part of how strong teams get surfaced. Referrals are not required to apply — anyone can submit at any time — but they create real advantages:
+SCF 7.0 introduced a verified referral pathway as a core part of how strong teams get surfaced. SCF relies heavily on referral signals to narrow focus and provide high-touch support to high-quality teams. Referrals are not required to apply — anyone can submit at any time — but they help:
 
-- **Stronger trust signals.** Your application carries weight from someone the SCF already trusts.
-- **Faster time-to-decision.** Referred submissions are prioritized in the review pipeline.
-- **Human context.** Your referrer adds qualitative insight about your team that no form can capture.
+- **Trust signals.** Your application carries context from someone the SCF already trusts.
+- **Human context.** Your referrer adds qualitative insight about your team that no form can capture, which is confirmed and considered during evaluation.
 
-Without a referral, your submission goes through SDF prescreening — a completeness and eligibility check that filters low-signal applications before panel review. That filter works, but a referral bypasses it entirely.
+Prescreening is a completeness and eligibility check that applies to **all** submissions — referred and non-referred alike. A referral does not bypass it; it is a trust signal and adds context, not a way to skip review. Referrals "do not guarantee acceptance into SCF, selection, funding, or any other benefit," and a referrer may not represent that a referral confers any advantage or influences decisions.
 
 The referral program exists to build a more trust-based sourcing layer for the SCF — helping discover strong teams earlier, adding real-world context to applications, and expanding into new geographies and communities.
 
@@ -20,22 +19,24 @@ The referral program exists to build a more trust-based sourcing layer for the S
 
 ### Who Can Refer
 
-Referrers are trusted ecosystem contributors who have been vetted and invited into the program. They typically include:
+Participation is limited to referrers who are explicitly **approved and onboarded** by the SCF / Ecosystem Growth team. At SCF's discretion, approval may be granted to a broad range of trusted ecosystem participants:
 
-- **SCF Pilots** — The core group of experienced community members who serve as delegates, reviewers, and governance participants across SCF rounds. Pilots are the most common referrers.
-- **Stellar Development Foundation staff** — SDF team members who work directly with the ecosystem and have visibility into what the network needs.
+- **Community members and ecosystem contributors** — Active, recognized participants in the Stellar community.
 - **Stellar Ambassadors** — Regional community leaders recognized by the ecosystem.
-- **SCF alumni who reached mainnet** — Teams who have completed all tranches and shipped to mainnet are eligible to refer new teams.
-- **Accelerator programs and official ecosystem partners** — Organizations with established Stellar relationships.
+- **Navigators and Pilots** — Experienced community members who serve as delegates, reviewers, and governance participants across SCF rounds.
+- **Partners** — Accelerator programs and official ecosystem partners with established Stellar relationships.
+- **Stellar Development Foundation (SDF) personnel** — SDF team members who work directly with the ecosystem. Note: current SDF employees can refer teams but are **not eligible to receive referral rewards**.
 
-Each referrer receives a **unique referrer code** that they use when endorsing teams. This code ties every referral back to the referrer's track record.
+Each approved referrer receives a **unique referrer code** that they use when endorsing teams. This code ties every referral back to the referrer's track record. Only an approved, onboarded referrer can make a tracked referral.
 
 ### What Referrers Stake
 
-Referrals are not free endorsements. Referrers earn **recognition and financial incentives tied to the success of teams they refer.** This creates skin-in-the-game:
+Referrals are not free endorsements. Referrers earn **recognition and discretionary financial rewards tied to the success of teams they refer.** This creates skin-in-the-game:
 
-- If the teams a referrer endorses get funded and deliver, the referrer builds reputation and earns incentives.
+- If the teams a referrer endorses get funded and deliver, the referrer builds reputation and may earn a reward.
 - If a referrer endorses weak teams that fail or waste funding, their credibility erodes.
+
+**The Referral Reward (Referral Program §4.4).** At SCF's sole discretion, a referrer may receive **up to 1% of the total SCF award** actually granted to a team they referred, denominated in XLM. A referrer can earn multiple rewards for separate successful referrals, subject to an **aggregate cap of 6 referral rewards per application cycle**. Critically, the reward is **paid only on completion of the final Build Award tranche** and the actual disbursement of that final tranche to the referred team — so a referrer is only rewarded if the team ships all the way through. Current SDF employees are **not eligible** to receive referral rewards.
 
 This is why referrers are selective. Their reputation is on the line with every endorsement.
 
@@ -143,7 +144,7 @@ Here's the full flow from the applicant's perspective:
 
 Referrals are valuable but not required. Plenty of projects get funded without one.
 
-Without a referral, your submission goes through **SDF prescreening** — a review that confirms your application is complete and meets core eligibility criteria before moving to panel review. To pass prescreening:
+With or without a referral, every full submission goes through **SDF prescreening** — a review that confirms your application is complete and meets core eligibility criteria before moving to panel review. A referral does not exempt you from prescreening. To pass it:
 
 - Make sure your submission is complete and coherent
 - Demonstrate that Stellar is core to your project
@@ -151,24 +152,21 @@ Without a referral, your submission goes through **SDF prescreening** — a revi
 - Provide a realistic, justified budget
 - Show your team's credibility
 
-18.7% of Build Award submissions fail at prescreen. The most common causes are incomplete applications, missing Stellar integration, and vague or ineligible proposals. A strong submission passes prescreening without a referral — the referral just gives you a head start.
+The most common causes of failure are incomplete applications, missing Stellar integration, and vague or ineligible proposals. A strong submission passes prescreening on its own merits; a referral adds a trust signal and context, but does not skip the check.
 
 ---
 
 ## Where to Find Potential Referrers
 
-The SCF doesn't publish a public list of referrers. But referrers are typically drawn from two main groups:
+The SCF doesn't publish a public list of referrers, and only approved, onboarded referrers can make a tracked referral. Approved referrers are drawn from across the ecosystem:
 
-- **SCF Pilots.** The most common referrers. Pilots are the highest governance tier in the SCF community — they serve as quarterly delegates on review panels, participate in Pilot-only strategy conversations, and can propose and vote on governance decisions. They're visible in the Stellar Developer Discord, active in round reviews, and deeply familiar with what makes a strong submission. If you're engaged in the ecosystem, you'll encounter Pilots naturally.
-- **SDF staff.** Stellar Development Foundation team members who work directly with ecosystem projects. They have visibility into strategic priorities and what the network needs. SDF employees can refer teams but do not receive financial referral incentives.
-
-Other potential referrers include:
-
+- **Pilots and Navigators.** Experienced community members who serve as delegates and reviewers across SCF rounds. They're visible in the Stellar Developer Discord, active in round reviews, and deeply familiar with what makes a strong submission. If you're engaged in the ecosystem, you'll encounter them naturally.
 - **Stellar Ambassadors.** Regional community leaders active in local Stellar communities.
-- **SCF alumni who reached mainnet.** Teams that have completed all tranches and shipped to mainnet are now eligible referrers. Check the [SCF Awards page](https://communityfund.stellar.org/awards) for previously funded projects.
+- **Community members and ecosystem contributors.** Recognized, active participants in the Stellar community.
 - **Accelerator programs and ecosystem partners.** Organizations with established Stellar relationships.
+- **SDF personnel.** Stellar Development Foundation team members who work directly with ecosystem projects. They can refer teams but do not receive referral rewards.
 
-The best path to finding a referrer is being visibly active in the ecosystem before you need one. Pilots and SDF staff notice teams that contribute authentically — not teams that appear only when they want something.
+The best path to finding a referrer is being visibly active in the ecosystem before you need one. Referrers notice teams that contribute authentically — not teams that appear only when they want something.
 
 ---
 

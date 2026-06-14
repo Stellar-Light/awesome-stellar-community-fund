@@ -4,9 +4,13 @@
 
 ## Why Traction Matters
 
-SCF reviewers need to believe that your project will be used. The strongest signal is evidence that it already is — or that clear demand exists. The SCF handbook states that projects must demonstrate they have either "significant user traction" or "a validated need identified by a team or individual experienced in the Stellar ecosystem."
+SCF reviewers need to believe that your project will be used. The strongest signal is evidence that it already is — or that clear demand exists. The SCF handbook states that projects must demonstrate product–market fit through either "significant user traction" or "a clearly validated need identified by a team or individual with relevant experience in the Stellar ecosystem."
 
 For returning applicants, the bar is higher: you must share "evidence of significant traction from prior funding, ideally onchain metrics."
+
+> **⚠️ Reviewers consider only what is inside your submission.** The SCF handbook is explicit: **"No external materials are considered."** Your submission must be complete and self-contained, and your traction **must be verifiable in-submission**. Reviewers will not click out to a dashboard, log in to an analytics tool, or hunt down a link to confirm a number. Embed the evidence directly: paste the key figures, screenshot the dashboards, state the counts in the text, and cite specific transaction hashes. External URLs are supplementary citations only — never load-bearing.
+
+> **Traction can come from anywhere — as long as it's verifiable in-submission.** Traction may be on Stellar, on another chain, or off-chain entirely. What matters is not the venue but that the evidence is concrete, relevant to what you're proposing, and checkable from inside the submission itself.
 
 ---
 
@@ -25,7 +29,7 @@ Verifiable, tamper-resistant, and the gold standard for SCF reviewers.
 - **Asset holders:** Number of accounts holding your issued asset
 - **Liquidity pool participation:** Volume and depth in AMM pools
 
-**How to present:** Link to a Stellar block explorer, a public dashboard, or specific transaction hashes. On-chain data is self-verifying — make it easy for reviewers to check.
+**How to present:** State the figures directly in the submission and cite the specific transaction hashes, contract addresses, and asset codes so a reviewer can confirm them. Paste or screenshot the key numbers — don't make the reviewer leave the submission to find them. A block-explorer or dashboard URL can be added as a supplementary citation, but the evidence itself must be in-submission.
 
 ### Tier 2: Product Usage Metrics
 
@@ -117,13 +121,16 @@ A single number is a snapshot. Two or more data points over time show direction.
 
 If your retention rate is 40% at 30 days, compare it to industry norms. If your transaction volume is growing faster than comparable projects, say so.
 
-### Make It Verifiable
+### Make It Verifiable In-Submission
 
-Link to public sources wherever possible:
-- Block explorers for on-chain data
-- Public dashboards (even a simple one on Dune or your own site)
-- App store listings with download counts and ratings
-- Social media accounts with visible follower counts and engagement
+Reviewers consider only what is inside your submission — **no external materials are considered.** So the evidence has to live in the submission itself, not behind a link:
+
+- **On-chain data:** State the figures and cite the specific transaction hashes, contract addresses, and asset codes. Paste or screenshot the relevant explorer view rather than only linking out.
+- **Dashboards (Dune, analytics, your own site):** Screenshot the key charts and numbers and embed them; restate the headline figures in the text.
+- **App store presence:** State the download count and rating directly in the text (e.g. "12,400 downloads, 4.6★ across 380 ratings") and add a screenshot — don't rely on the reviewer opening the listing.
+- **Social / community:** State follower and engagement counts directly (e.g. "3,200 Discord members, ~140 weekly active") with a screenshot for the headline numbers.
+
+External URLs are useful as supplementary citations so a reviewer *can* double-check, but they are never load-bearing: if a claim can only be confirmed by leaving the submission, treat it as unverified and bring the evidence inside.
 
 ---
 
@@ -133,7 +140,7 @@ Link to public sources wherever possible:
 |----------|-------------|
 | No metrics at all | Signals the team hasn't validated demand |
 | Vague claims ("significant traction," "strong interest") | Unverifiable. Reviewers discount vague language completely. |
-| Metrics from a different product or chain only | Shows traction elsewhere but not that Stellar-specific demand exists |
+| Traction that isn't verifiable in-submission or isn't relevant | Traction can be on Stellar, another chain, or off-chain — the venue is fine. What hurts is evidence a reviewer can't confirm from inside the submission, or numbers from an unrelated product that don't speak to demand for what you're proposing. |
 | Inflated bot traffic | Reviewers check on-chain data. Fake activity is detectable and disqualifying. |
 | Token holders as the only metric | Holding a token is not product usage. Show actual product interaction. |
 | No adoption targets for post-funding | Tells reviewers you haven't thought about growth |
@@ -169,10 +176,10 @@ Your submission should include forward-looking targets — what you'll achieve w
 ## Checklist Before You Submit
 
 - [ ] Traction evidence is specific, quantified, and time-bound
-- [ ] On-chain metrics are linked to a verifiable source (block explorer, dashboard)
+- [ ] All evidence is embedded in-submission (figures stated, dashboards screenshotted, tx hashes cited) — no claim depends on an external link
 - [ ] Growth trends are shown, not just single snapshots
 - [ ] Adoption targets are included with specific numbers and timelines
 - [ ] No vague language ("significant," "strong," "many") without backing numbers
-- [ ] For returning applicants: on-chain metrics from prior funding are included
+- [ ] For returning applicants: on-chain metrics from prior funding are included in-submission
 - [ ] For new projects: demand signals or market validation are concrete
-- [ ] Claims are verifiable — a reviewer could check them independently
+- [ ] Every claim is verifiable from inside the submission — a reviewer never has to leave it to confirm

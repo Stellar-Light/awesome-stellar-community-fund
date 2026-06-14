@@ -99,7 +99,7 @@ Organize your budget into clear categories. Here's a standard structure:
 - Internal security review
 - Penetration testing
 - Dev time for audit remediation (fixing issues found during audit)
-- **Note:** The audit itself is covered by the Audit Bank (available via LaunchKit at T2) — do not budget separately for audit fees. You can budget dev time for addressing audit findings.
+- **Note:** The audit itself is covered by the Audit Bank — a standalone program (not tranche-gated) where SDF covers up to 100% of the audit cost for eligible projects, with a 5% refundable initial co-pay. Do not budget separately for audit fees. You can budget dev time for addressing audit findings.
 
 ### Operations and Other (typically 0-10%)
 - Documentation
@@ -180,7 +180,7 @@ These are not hard rules. If your team is in a high-cost market, higher rates ar
 | No per-tranche budget mapping | Reviewers can't verify if tranche payments match the work. |
 | MVP deliverables are all "research" or planning | MVP is your proof of intent. Reviewers need to see code interacting with Stellar, not just plans. |
 | Including "marketing" as a major line item | SCF funds building, not marketing. Small community/docs budget is fine. Large marketing spend is a red flag. |
-| Budgeting for audit fees | The Audit Bank covers audit costs via LaunchKit at T2. Budget dev time for remediation, not the audit itself. |
+| Budgeting for audit fees | The Audit Bank (a standalone application, not tranche-gated) covers audit costs for eligible projects — up to 100%, with a 5% refundable initial co-pay. Budget dev time for remediation, not the audit itself. |
 | Massive contingency buffer | More than 5% contingency looks like padding. |
 | No team rates or effort estimates | A budget without rates and hours is a guess, not a plan. |
 | Identical rates for all roles | Different roles have different market rates. Flat rates suggest the budget wasn't built bottom-up. |
@@ -214,7 +214,7 @@ The lifetime cap is $150K standard, with up to $300K case-by-case for projects w
 | **Infrastructure** | Dedicated RPC node (6 mo) | — | $200/mo | $1,200 |
 | | Cloud hosting (6 mo) | — | $300/mo | $1,800 |
 | **Security** | Internal security review | 1 week | $4,000/wk | $4,000 |
-| | (External audit via LaunchKit — not budgeted) | — | — | $0 |
+| | (External audit covered by Audit Bank — not budgeted) | — | — | $0 |
 | **Operations** | Documentation + API docs | 1 week | $2,000/wk | $2,000 |
 | | | | **Total** | **$85,000** |
 
@@ -306,6 +306,6 @@ Why this works: Budget is tied to specific deliverables, not abstract categories
 - [ ] Budget maps to tranches with matching scope
 - [ ] Total is proportional to scope (not inflated to hit $150K)
 - [ ] Non-labor costs are specific and realistic
-- [ ] LaunchKit benefits (audit credits, etc.) are factored in and not double-counted
+- [ ] Audit fees are excluded (covered by the Audit Bank — a standalone application, up to 100% with a 5% refundable initial co-pay)
 - [ ] No large "marketing" or "contingency" buckets
 - [ ] For returning applicants: prior funding usage is addressed

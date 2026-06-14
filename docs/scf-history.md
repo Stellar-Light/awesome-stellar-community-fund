@@ -1,6 +1,8 @@
 # SCF History: Versions, Award Types, and Program Evolution
 
 > A data-driven reference covering every version of the Stellar Community Fund, from the original Build Challenge replacement in 2019 through today's three-track SCF 7.0. Includes award type details, funding statistics, and special programs — all informed by 3,301 submissions and $49.3M in total payouts tracked in the SCF database.
+>
+> **A note on the numbers:** All submission counts, payout totals, approval rates, and per-version statistics in this document (e.g. 3,301 submissions, $49.3M in payouts, ~215 funded Build awards) are **research/DB-derived figures** computed from LumenLoop's SCF database, not figures published in the SCF Handbook. Program rules and definitions are sourced from the handbook; the aggregate statistics are our own derivations and may differ slightly from official tallies.
 
 ## Table of Contents
 
@@ -28,8 +30,8 @@
 | **3.0** | 2021–2022 | 8–11 | v3.0 Award | USD-denominated budgets. Community feedback loops. Awards up to $100K. |
 | **4.0** | 2022–2023 | 12–19 | v4.0 Award | Soroban era. 10% Proof of Intent upfront. Rapid round cadence. |
 | **5.0** | 2023–2024 | 20–29 | Activation + Community Award | Dual-award model. Neural Quorum Governance. |
-| **6.0** | 2024–2025 | 30–40 | Build Award | Merged into single Build Award (up to $150K). Kickstart. LaunchKit. |
-| **7.0** | 2026–present | 41+ | Build Award (Integration, Open, RFP) + Instawards | Three tracks. Referrals. SDF prescreening. UX readiness gate. |
+| **6.0** | 2024–2025 | 30–40 | Build Award | Merged into single Build Award (up to $150K). Kickstart bootcamp. |
+| **7.0** | 2026–present | 41+ | Build Award (Integration, Open, RFP) + Instawards | Three tracks. Referrals. SDF prescreening. Audit Bank. |
 
 ---
 
@@ -268,7 +270,6 @@ SCF 6.0, launched on September 4, 2024, simplified the award structure:
 - **Single Build Award** — The Activation and Community Awards were merged into one unified Build Award, with **up to $150,000 in XLM** per project.
 - **Category Delegate Panels** — Quarterly-rotating panels of domain experts replaced the previous selection process. Delegates were nominated from the community.
 - **Kickstart program** — A 5-day virtual bootcamp (evolved from Startup Camp) for early-stage teams. Up to $15K per project. Designed to feed the Build Award pipeline.
-- **Stellar LaunchKit** — Unlocked at the Testnet milestone (T2), providing audit credits, UX audits, infrastructure offers, and accelerator connections.
 - **Milestone-based tranches** — Funding distributed as MVP → Testnet → Mainnet milestones, with the 10% Proof of Intent continuing from v4.0.
 - **Lifetime cap** — Up to $150K per team, with case-by-case exceptions up to $300K for high-traction projects.
 
@@ -325,19 +326,19 @@ SCF 7.0, announced January 16, 2026, is the most structural redesign since v5.0:
   - **Integration Track** — For teams building end-user applications that integrate an existing Stellar building block (DeFi protocol, wallet SDK, anchor service). Reviewed by rotating delegate panel. Eligible building blocks decided by community vote each quarter.
   - **Open Track** — For experienced teams building novel protocols or infrastructure. Decided by community vote via Neural Quorum Governance.
   - **RFP Track** — For developers responding to published Requests for Proposals targeting identified ecosystem gaps. Reviewed by domain-expert delegate panels.
-- **Instawards** — Replaced Kickstart. Decentralized, ambassador-led awards of up to $15K for very early-stage teams. Regional Stellar Ambassador chapters recommend projects, subject to SDF approval.
-- **Referral system** — Trusted ecosystem participants (primarily Pilots and SDF staff, plus ambassadors, alumni, and partners) can refer teams. Referred submissions get stronger trust signals and faster review. Referrers earn recognition and financial incentives.
-- **SDF prescreening** — Non-referred submissions go through an SDF completeness and eligibility check before panel review.
-- **UX readiness gate** — The final tranche (T3) now requires functional interfaces and usable onboarding, not just a mainnet deployment.
+- **Instawards** — Accelerated, ambassador-led funding for very early-stage teams. Builders engage with their regional Stellar Ambassador Chapter, which can refer a clearly scoped ~30-day sprint to SDF for approval. Initial Instawards are typically **$1,000–$5,000** (paid in XLM); with successful follow-on sprints, total funding can reach a **$15,000 aggregate lifetime cap** (up to two follow-on disbursements). (Instawards arrived alongside SCF 7.0 as the Kickstart bootcamp was retired, but they are framed as accelerated funding via Ambassador Chapters, not a Kickstart successor.)
+- **Referral system** — Approved ecosystem participants (community members, Ambassadors, Navigators, Pilots, partners, and SDF personnel) can refer teams via a unique referral code. A referral surfaces and contextualizes a team but confers no advantage — it does not bypass review or speed decisions. Referrers may earn a discretionary reward (up to 1% of the awarded budget, max 6 per cycle, paid on final-tranche disbursement); current SDF employees are not eligible for rewards.
+- **SDF prescreening** — Every full submission goes through an SDF completeness and eligibility check before panel review.
+- **UX expectations** — Funded teams are expected to ship usable interfaces and onboarding for their mainnet launch; UX audits and user testing are available as optional support (not a separate payout gate).
 - **Interest Form first** — All new projects submit an Interest Form before being invited to a Build Award round.
-- **Post-launch support** — Growth Hack program, Launch Weeks, BD support, and investment access for teams with live mainnet deployments.
+- **Post-launch support** — Growth Hack, Public Goods Award, Stellar Liquidity Award, BD support, and investment access for teams with live mainnet deployments.
 - **Four explicit tranches** — 10% / 20% / 30% / 40% structure formalized.
 
 ### Award Amounts
 
 - **Build Award:** Up to $150,000 in XLM per award
-- **Instawards:** Up to $15,000 per project
-- **Lifetime cap:** $150K standard, up to $300K case-by-case
+- **Instawards:** $1,000–$5,000 initial, in XLM; $15,000 aggregate lifetime cap (up to two follow-on disbursements)
+- **Lifetime cap (Build Award):** $150K standard; $300K only as a case-by-case exception after a project has already received $150K
 
 ---
 

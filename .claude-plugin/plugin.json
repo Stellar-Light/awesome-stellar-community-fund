@@ -1,0 +1,11 @@
+{
+  "name": "awesome-stellar-community-fund",
+  "displayName": "Awesome Stellar Community Fund",
+  "version": "0.1.0",
+  "description": "Ten AI skills plus curated guides for the Stellar Community Fund (SCF): review and rank rounds, draft Build Award and Interest Form submissions, build budgets, prescreen, analyze competitors, prepare referrals, and write tranche reports.",
+  "author": { "name": "LumenLoop", "url": "https://lumenloop.com" },
+  "homepage": "https://github.com/lumenloop/awesome-stellar-community-fund",
+  "repository": "https://github.com/lumenloop/awesome-stellar-community-fund",
+  "license": "MIT",
+  "keywords": ["stellar", "scf", "stellar-community-fund", "soroban", "grants", "funding", "skills"]
+}

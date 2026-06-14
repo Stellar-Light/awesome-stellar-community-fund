@@ -1,19 +1,19 @@
 ---
 name: scf-prescreen-checker
-description: "Simulate the SCF prescreen filter on a Build Award submission. Checks completeness, Stellar integration, eligibility, budget issues, and common disqualifiers."
+description: "Simulate the SCF team's manual prescreen on a Build Award submission — a completeness and eligibility check applied to every full submission before panel review. Checks completeness, Stellar integration, eligibility, budget issues, and common disqualifiers. Use when reviewing a draft Build Award submission for readiness before it goes to the SCF round."
 ---
 
 # SCF Prescreen Checker
 
 ## Overview
 
-Simulates the SCF prescreening process that all non-referred submissions go through before human reviewers see them. Identifies issues that would cause an application to fail at prescreen — the stage where 18.7% of Build Award submissions are eliminated.
+Simulates the SCF prescreen that every Build Award submission goes through before it reaches the review panel. The prescreen is a manual completeness and eligibility check by the SCF team — it confirms your submission is complete, reviewable, and ready, not whether your idea is strong. This skill identifies issues that would get flagged at prescreen so you can fix them first.
 
 ## How Prescreening Works
 
-Non-referred submissions go through AI-powered prescreening that evaluates whether the application meets basic quality and relevance thresholds. Referred submissions bypass this filter entirely.
+Every Build Award submission goes through prescreening before it reaches the review panel — referred and non-referred submissions alike; a referral confers no prescreen exemption. The prescreen is a qualitative, manual check by the SCF team that confirms the submission is complete, reviewable, and meets the core eligibility criteria. It is not a judgment of the strength of your idea, and the SCF team may reach out with suggested edits so you can improve the submission before it is sent to the panel.
 
-The most common prescreen failure causes:
+The most common prescreen issues:
 1. **Incomplete applications** — Missing sections, unanswered fields, broken links
 2. **No Stellar integration** — Project could work on any chain or doesn't use Stellar at all
 3. **Ineligible teams or proposals** — Sanctioned jurisdictions, duplicate submissions, ineligible project types

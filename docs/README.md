@@ -13,12 +13,12 @@ Read these in order:
 7. **[Writing Deliverables](writing-deliverables.md)** — Structure deliverables across the three milestones (MVP, Testnet, Mainnet).
 8. **[Writing Budgets](writing-budgets.md)** — Build a bottom-up, proportional budget.
 9. **[Proving Traction](proving-traction.md)** — Present metrics, demand signals, and adoption targets.
-10. **[UX Readiness](ux-readiness.md)** — Understand the T3 UX gate and plan for it from day one.
+10. **[UX Readiness](ux-readiness.md)** — Understand UX expectations for funded builds and plan for them from day one.
 
 **After you're funded:**
 
 11. **[Submitting Tranches](submitting-tranches.md)** — How to submit your deliverables at each milestone to unlock tranche payments.
-12. **[Post-Launch and Growth](post-launch-growth.md)** — Prepare for Growth Hack, Launch Weeks, and additional awards.
+12. **[Post-Launch and Growth](post-launch-growth.md)** — Prepare for Growth Hack, Public Goods Award, Stellar Liquidity Award, and additional awards.
 
 **If you're applying to the RFP Track**, also read:
 - **[RFP Response Guide](rfp-response-guide.md)** — RFP-specific dynamics, spec compliance, DX, and maintenance planning.
@@ -26,8 +26,8 @@ Read these in order:
 ## If You're Reviewing
 
 1. **[SCF 7.0 Guide](scf-7-guide.md)** — Program context and track definitions.
-2. **[SCF Reviewer Skill](../skills/scf-reviewer.md)** — Evaluation framework, track weighting, output formats, and verification requirements.
-3. **[SCF Round Reviewer Skill](../skills/scf-round-reviewer.md)** — Review and rank an entire Build Award round: batch review, calibration, and final ranking.
+2. **[SCF Reviewer Skill](../skills/scf-reviewer/SKILL.md)** — Evaluation framework, track weighting, output formats, and verification requirements.
+3. **[SCF Round Reviewer Skill](../skills/scf-round-reviewer/SKILL.md)** — Review and rank an entire Build Award round: batch review, calibration, and final ranking.
 4. **Reference as needed:** Use the applicant guides as benchmarks for "what good looks like" — the reviewer skill links to each one.
 
 ## Background and Research
@@ -48,7 +48,7 @@ Read these in order:
 | [Writing Deliverables](writing-deliverables.md) | Applicants | Milestone-based deliverable structuring |
 | [Writing Budgets](writing-budgets.md) | Applicants | Bottom-up budget construction |
 | [Proving Traction](proving-traction.md) | Applicants | Metrics, demand signals, adoption targets |
-| [UX Readiness](ux-readiness.md) | Applicants | T3 UX gate requirements |
+| [UX Readiness](ux-readiness.md) | Applicants | UX expectations for funded builds |
 | [Submitting Tranches](submitting-tranches.md) | Funded Teams | How to submit deliverables for tranche review |
-| [Post-Launch and Growth](post-launch-growth.md) | Funded Teams | Growth Hack, Launch Weeks, additional awards |
+| [Post-Launch and Growth](post-launch-growth.md) | Funded Teams | Growth Hack, Public Goods Award, Stellar Liquidity Award, additional awards |
 | [RFP Response Guide](rfp-response-guide.md) | RFP Applicants | RFP-specific response guidance |

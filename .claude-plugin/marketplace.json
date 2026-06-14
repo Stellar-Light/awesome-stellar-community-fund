@@ -1,0 +1,18 @@
+{
+  "name": "awesome-scf",
+  "owner": { "name": "LumenLoop", "url": "https://lumenloop.com" },
+  "metadata": {
+    "description": "Skills and guides for participating in the Stellar Community Fund.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "awesome-stellar-community-fund",
+      "source": "./",
+      "description": "Ten SCF skills: round/application review, submission and interest-form drafting, budgeting, prescreen, competitor analysis, referral prep, and tranche reporting.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "keywords": ["stellar", "scf", "grants", "funding", "review"]
+    }
+  ]
+}

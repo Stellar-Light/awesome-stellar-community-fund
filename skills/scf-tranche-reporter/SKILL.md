@@ -28,7 +28,7 @@ Build Awards are paid in four tranches tied to three milestones:
 
 **Key facts:**
 - T0 is automatic — you receive 10% as soon as your project is approved
-- For T1, T2, and T3, you submit milestone deliverables for review
+- For T1, T2, and T3, you submit milestone deliverables for review via the **SCF Build Tranche Completion Form** (emailed to you after your T0 payment is sent)
 - Each submission is reviewed by an SCF reviewer (often a Pilot or delegate)
 - The reviewer checks whether each deliverable meets its stated completion criteria
 - If deliverables are incomplete or evidence is insufficient, the team is asked to revise
@@ -93,6 +93,8 @@ If anything changed from the original plan:
 
 Small deviations are normal and expected. Reviewers want transparency, not perfection. What causes problems is undisclosed changes or missing deliverables with no explanation.
 
+If a tranche's scope has materially changed, **contact the SCF team before submitting the modified tranche** — explain what changed and why, and update your success metrics or proof formats if needed. Then submit through the SCF Build Tranche Completion Form.
+
 ### Step 4: Milestone-Specific Requirements
 
 #### T1: MVP
@@ -103,7 +105,7 @@ Small deviations are normal and expected. Reviewers want transparency, not perfe
 
 #### T2: Testnet
 - All core functionality should be working on testnet
-- Audit readiness (if applicable — LaunchKit audit credits unlock at T2)
+- Audit readiness (if applicable — eligible projects can request an audit through the Audit Bank around this stage, typically after the testnet tranche when nearly mainnet-ready; SDF covers up to 100% of the cost, with a 5% refundable initial co-pay)
 - Integration testing complete
 - This is where the project should be functionally complete and testable, even if not yet production-ready
 
@@ -183,10 +185,10 @@ Structure the tranche submission report clearly.
 
 ## Reference Guides
 
-- [Submitting Tranches](../docs/submitting-tranches.md) — Full tranche submission guidance
-- [Writing Deliverables](../docs/writing-deliverables.md) — How deliverables should be structured (what reviewers compare against)
-- [UX Readiness](../docs/ux-readiness.md) — T3 UX gate requirements
-- [Post-Launch and Growth](../docs/post-launch-growth.md) — What comes after T3
+- [Submitting Tranches](../../docs/submitting-tranches.md) — Full tranche submission guidance
+- [Writing Deliverables](../../docs/writing-deliverables.md) — How deliverables should be structured (what reviewers compare against)
+- [UX Readiness](../../docs/ux-readiness.md) — T3 UX gate requirements
+- [Post-Launch and Growth](../../docs/post-launch-growth.md) — What comes after T3
 
 ## Reference Links
 

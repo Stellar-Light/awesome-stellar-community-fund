@@ -75,6 +75,16 @@ Covers six areas:
 | **Budget & Deliverables** | Is the budget bottom-up and proportional to scope? Are milestones concrete and verifiable? |
 | **Ecosystem Commitment** | Long-term Stellar alignment or chain-hopping risk? Maintenance plan? |
 
+## Hard Rules to Check Against
+
+Beyond the qualitative framework, weigh every submission against these handbook rules. A violation is a concrete, defensible reason to flag or downgrade:
+
+- **$150K budget cap.** Awards are capped at $150,000 worth of XLM, and the cap is **lifetime** (accumulated across all of a project's awards). $300K is **not** a general option — it's a case-by-case exception only for a project that has *already* received its full $150K, up to a lifetime maximum of $300K. Flag any request above $150K, and any returning applicant whose cumulative funding would exceed the cap.
+- **6-month timeline cap.** The project timeline should not exceed 6 months. Flag plans that clearly need longer than that to reach mainnet.
+- **Tranche 1 must be development.** The technical architecture must already be complete at application time. Tranche 1 deliverables should be actual building, not "research," "planning," or "system design." Flag MVP tranches that are just planning.
+- **Ineligible costs.** Budgets must not include audit costs (covered separately by the Audit Bank), marketing / user acquisition, bounties / token giveaways / prize pools, legal or entity-registration fees, or reimbursement for past work. Flag any of these as line items.
+- **Resubmission timeout.** A project rejected **three times** is blocked from applying for the next **three rounds** (each further failed submission adds another three-round timeout). If you know the submission history, factor this in — a project inside an active timeout should not be in the round.
+
 ## Output Formats
 
 ### Form Fields
@@ -153,8 +163,7 @@ Track: [Integration / Open / RFP]
 
 ## Reference Links
 
-- [SCF Handbook](https://communityfund.stellar.org/handbook)
-- [Build Track](https://communityfund.stellar.org/build)
-- [FAQ](https://communityfund.stellar.org/faq)
-- [SCF 7.0 Announcement](https://communityfund.stellar.org/blog/scf-7-0)
+- [SCF Handbook](https://stellar.gitbook.io/scf-handbook)
+- [Build Award](https://stellar.gitbook.io/scf-handbook/scf-awards/build-award)
+- [FAQ](https://stellar.gitbook.io/scf-handbook/additional-support/faq)
 - [Awards Page](https://communityfund.stellar.org/awards)

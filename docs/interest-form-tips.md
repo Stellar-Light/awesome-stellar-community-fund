@@ -56,6 +56,8 @@ For Integration Track: name your integration partner and the building block.
 For RFP Track: reference the specific RFP you're responding to.
 For Open Track: explain why your project doesn't fit Integration or RFP.
 
+**A note on budget figures.** The Interest Form is a high-level pitch, not the place for a line-item budget. If you're asked for a rough budget, keep it directional. The scope bands you may have seen — roughly **$25K–$50K**, **$50K–$100K**, and **$100K–$150K** — are **Integration Track** scope bands, not standard Interest Form fields. Whatever track you target, the Build Award is capped at **$150K** in XLM; save the detailed, bottom-up budget for the full Build Award submission.
+
 ### Show Any Traction (If You Have It)
 
 If you have existing users, a prototype, a waitlist, or partner commitments, mention them briefly. This is not required at the Interest Form stage, but it significantly strengthens your submission.
@@ -83,13 +85,17 @@ Don't write your Build Award application in the Interest Form. Be concise, be cl
 
 ## The Referral Advantage
 
-If you can get a referral from an SCF Pilot, SDF staff member, SCF alumni, Stellar Ambassador, accelerator program, or official ecosystem partner, do it before submitting your Interest Form. Referred teams receive:
+SCF relies heavily on referral signals to source and prioritize strong teams, so a referral genuinely helps. If you can get one from an approved referrer — a community member, Stellar Ambassador, Navigator, Pilot, partner, or SDF personnel — ask them for their unique referrer code and include it on your Interest Form.
 
-- Stronger trust signals during review
-- Faster time-to-decision
-- Bypass of SDF prescreening
+A referral changes how your project enters the pipeline. If you list a referrer, your intake includes a **Referral Confirmation and Eligibility Review**: your referrer confirms the referral and provides context about your team. If you don't have a referrer, your project instead goes through an **initial review to determine whether you're currently eligible**. Either way you can be invited to submit.
 
-Teams without referrals go through standard processing, which includes SDF prescreening that checks completeness and eligibility. A referral doesn't guarantee an invitation, but it significantly improves your odds and speed.
+What a referral does **not** do:
+
+- It does **not** guarantee acceptance, an invitation, funding, or any other benefit — referrals "do not guarantee acceptance into SCF, selection, funding, or any other benefit."
+- It does **not** bypass the post-submission **prescreen**. Once you submit a full Build Award proposal, SDF prescreens it for completeness and core eligibility regardless of whether you were referred. (This intake eligibility review is a separate step from that post-submission prescreen — a referral surfaces and contextualizes your team, but does not skip the prescreen.)
+- It does **not** speed up evaluation or give your project an edge in scoring; referrers must not imply that a referral confers any advantage or influences decisions.
+
+**How a tracked referral works:** Only an approved, onboarded referrer can make a tracked referral, and attribution requires their **unique referral code** entered on your Interest Form. Ask your contact for their code — without it, there's nothing to attribute.
 
 **How to get a referral:**
 - Join the Stellar Developer Discord and engage in #scf-general
