@@ -4,16 +4,24 @@ A collection of tools, skills, and reference materials for participating in the 
 
 > Created by [LumenLoop](https://lumenloop.com) and now maintained by [Stellar Light](https://stellarlight.xyz), which serves the SCF handbook and the live RFP list as an open API — so the round-specific facts these skills depend on can be resolved rather than remembered.
 
-## Install as a Claude Code plugin
+## Install
 
-The skills in this repo are packaged as a [Claude Code](https://docs.claude.com/en/docs/claude-code) plugin:
+Works in any agent that reads skills — not just Claude:
+
+```
+npx skills add Stellar-Light/awesome-stellar-community-fund
+```
+
+That installs all twelve into `.agents/skills/`, which **Codex, Cursor, Amp, Antigravity and a dozen other agents read natively** — the skills are plain `SKILL.md` files whose instructions are `curl` calls, so nothing about them is Claude-specific.
+
+In Claude Code you can also install them as a plugin:
 
 ```
 /plugin marketplace add Stellar-Light/awesome-stellar-community-fund
 /plugin install awesome-stellar-community-fund@awesome-scf
 ```
 
-This makes all twelve SCF skills available in your session. You can also point any AI tool directly at an individual `skills/<name>/SKILL.md`, or read the [`docs/`](docs/) guides on their own.
+Or skip installing entirely and point any tool at an individual [`skills/<name>/SKILL.md`](skills/), or read the [`docs/`](docs/) guides on their own.
 
 ## What's Inside
 
