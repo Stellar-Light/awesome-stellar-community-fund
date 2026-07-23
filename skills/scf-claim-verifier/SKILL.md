@@ -64,6 +64,10 @@ If `repos[]` is empty, search directly:
 curl -s "https://stellarlight.xyz/api/repos/search?q=<project-or-topic>&limit=5"
 ```
 
+**Do not accept a same-org repo as the applicant's code.** Many directory entries link an *organisation* (`github.com/paltalabs`) rather than a repository, and orgs ship many unrelated products. Measured 2026-07-23: matching "Stellar DeFi Dune Dashboards" — an analytics-dashboard project — to `paltalabs/defindex-distributor`, a Soroban vault-deposit CLI, looks right on org name and is wrong. Scoring an applicant on a sibling project's codebase is worse than recording no code at all.
+
+Confirm the repo actually implements the thing the submission describes — read its description, or run `repos/explain` on it — before treating it as theirs. If you can't establish which repo is the applicant's, say "repo not established" and ask them. That is a fair review note; a wrong attribution is not.
+
 Gives `fullName` and `lastCommitAt` — enough to see whether a repo has been touched this year. For whether it is genuinely Soroban code rather than a README with ambition:
 
 ```bash
