@@ -9,16 +9,38 @@ description: "Validate and analyze budgets for SCF Build Award submissions. Use 
 
 Validates submission budgets against funded project benchmarks. Used during the review process to assess whether a budget is proportional to scope, properly broken down, and realistic.
 
-## Budget Benchmarks (from 215 funded Build Awards)
+## Budget Benchmarks — compute these live, don't read them off a table
 
-| Category | Median | Middle 50% Range |
+**Award medians move every round, and a stale benchmark costs a builder real money.** Checked 2026-07-23: the frozen table this skill used to carry was off by 27% on Tooling, 32% on Infrastructure, and 20% *low* on financial protocols. Someone sizing an infrastructure ask at the old $116K figure would have been $28K above the actual median — a rejection risk created by the skill itself.
+
+So derive them from awards that actually landed:
+
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=infrastructure&limit=25"
+```
+
+Every row carries `scfAwarded`, `scfTotalAwardedUSD` and `category`. Pull two or three category-relevant queries, keep the rows where `scfAwarded` is true and `scfTotalAwardedUSD` is set, and take the **median** — not the mean. The spread is enormous (real awards run $2,500 to $490,160), so a mean is dragged upward by a handful of large grants and will tell a first-time applicant to ask for far too much.
+
+Program-wide totals for context:
+
+```bash
+curl -s "https://stellarlight.xyz/api/analyze?dimension=funding"
+```
+
+**Indicative medians as of 2026-07-23** (n=99 awarded projects with disclosed amounts) — a sanity check on your own computation, not a substitute for it:
+
+| Category | Median | Observed range |
 |---|---|---|
-| Applications | $85,000 | $60K–$118K |
-| Developer Tooling | $75,000 | $35K–$99K |
-| Financial Protocols | $109,000 | $94K–$144K |
-| Infrastructure | $116,000 | $62K–$143K |
+| User-Facing App | $86,000 | $5,000–$490,160 |
+| Protocol/Contract | $136,000 | $2,500–$394,500 |
+| Infrastructure | $88,000 | $10,000–$444,840 |
+| Tooling | $55,000 | $14,000–$225,000 |
+
+Two honest caveats. These categories are **our** directory taxonomy, which does not map 1:1 onto SCF's own track names — "Financial Protocols" in SCF's language sits closest to Protocol/Contract here. And amounts are only counted where disclosed; XLM-denominated and undisclosed awards are excluded, so treat these as the shape of the distribution rather than a precise figure.
 
 ## Rate Benchmarks
+
+*Derived from funded budget breakdowns, last reviewed 2026-06. Unlike the award medians above these are **not** computable from the API — no endpoint holds per-role rates — so they are a frozen reference. Treat them as a sanity band, not a current market rate, and say so if you quote them.*
 
 | Role | Typical Range |
 |---|---|

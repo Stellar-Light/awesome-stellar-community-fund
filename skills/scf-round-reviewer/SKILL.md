@@ -171,12 +171,20 @@ Detect the round from the round column (e.g. "SCF #41" → round 41).
 ### Step 1.2: Categorize
 Assign each submission to exactly one category:
 
-| Category | Criteria | Budget Benchmark |
+| Category | Criteria | Budget benchmark (2026-07-23) |
 |---|---|---|
-| Financial Protocol | DeFi, DEX, lending, staking, trading, derivatives, capital protection | $109,000 |
-| Developer Tooling | SDKs, IDEs, debugging tools, testing frameworks, developer experience | $75,000 |
-| Infrastructure | Identity, compliance, compute layers, bridges, escrow, public goods, privacy | $116,000 |
-| End-User Application | Wallets, merchant payments, card programs, consumer apps | $85,000 |
+| Financial Protocol | DeFi, DEX, lending, staking, trading, derivatives, capital protection | ~$136,000 |
+| Developer Tooling | SDKs, IDEs, debugging tools, testing frameworks, developer experience | ~$55,000 |
+| Infrastructure | Identity, compliance, compute layers, bridges, escrow, public goods, privacy | ~$88,000 |
+| End-User Application | Wallets, merchant payments, card programs, consumer apps | ~$86,000 |
+
+**These medians move between rounds — recompute before you flag a budget as out of line.** The figures this table carried until 2026-07-23 were off by 27% on Tooling, 32% on Infrastructure, and 20% *low* on financial protocols. Flagging an applicant's budget against a stale benchmark is a review error that costs them funding:
+
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=<category-term>&limit=25"
+```
+
+Keep rows where `scfAwarded` is true and `scfTotalAwardedUSD` is set, take the **median** (the range runs $2,500–$490,160, so a mean misleads badly). See [`scf-live-context`](../scf-live-context/SKILL.md) for the full live-data recipe.
 
 For RFP Track: also tag each submission with its RFP category (from the track specifics column).
 
