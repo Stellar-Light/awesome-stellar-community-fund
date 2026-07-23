@@ -52,7 +52,13 @@ curl -s "https://stellarlight.xyz/api/analyze?dimension=funding"
 
 ### 3. Repo reality — is the linked code real?
 
-The project row already carries a `repos[]` array (`fullName`, `url`) — check that first, it saves a call. If it is empty, search directly:
+The project row carries a `repos[]` array (`fullName`, `url`, `lastCommitAt`) plus a `lastActivityAt` field.
+
+**Use `lastActivityAt` to judge whether a team is still working. Never `repos[0].lastCommitAt`.** `repos[]` is sorted by score, not recency, so `repos[0]` is the flagship repo — often the most stable and least recently touched. `lastActivityAt` is the newest commit across *all* the project's repos.
+
+The difference is not cosmetic. Blend's `repos[0]` (`blend-contracts`) last moved 2024-05-01, which reads as two years abandoned; its `lastActivityAt` is 2026-06-19 — 35 days — because `blend-sdk-js` is active, and its contracts carry 1.17M on-chain events. Judging Blend on `repos[0]` would tell a Pilot that a live, heavily-used protocol took its award and stopped working. Cross-check any inactivity finding against `onchain` events before raising it.
+
+If `repos[]` is empty, search directly:
 
 ```bash
 curl -s "https://stellarlight.xyz/api/repos/search?q=<project-or-topic>&limit=5"
