@@ -55,12 +55,24 @@ Run through each check. For each item, report: **PASS**, **FLAG** (potential iss
 
 ### 3. Eligibility Check
 
-| Check | What to Verify |
-|---|---|
-| Project type | Is this a project type the SCF funds (software, infrastructure, protocol)? |
-| Duplicate submission | Is this the same project submitted under a different name? |
-| Prior funding | If previously funded, has the team delivered on past awards? |
-| Budget range | Is the budget within the Build Award range (up to $150K)? |
+| Check | What to Verify | Look it up |
+|---|---|---|
+| Project type | Is this a project type the SCF funds (software, infrastructure, protocol)? | — |
+| Duplicate submission | Is this the same project submitted under a different name? | `projects/search?q=<capability>` — search the **capability**, not the brand; a rename is exactly what this check exists to catch |
+| Prior funding | If previously funded, has the team delivered on past awards? | `scfAwarded`, `scfTotalAwardedUSD`, `scfAwardedRounds` on the project row |
+| Budget range | Within the Build Award range, **accounting for what they've already drawn**? | see the cumulative rule below |
+
+Three of those four are one call:
+
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=<project-or-capability>&limit=10"
+```
+
+**The cap is cumulative, not per-submission.** The handbook allows up to **$150,000 in XLM across all awards accumulated**, and above that only case-by-case, subject to a **$300,000 lifetime** cap. So "is this budget in range" is not `budget <= 150000` — it is `scfTotalAwardedUSD + budget <= 150000`, and anything past that needs the case-by-case note rather than a pass. A team with $120K already drawn asking for $90K is over the line even though $90K looks fine on its own.
+
+For "has the team delivered on past awards", `lastActivityAt` (newest commit across all their repos — **not** `repos[0].lastCommitAt`, which is score-sorted) plus `onchain` contract events tells you whether the funded work is alive. Cross-check both before raising it: a quiet repo on a project with live contract traffic is not an undelivered award.
+
+**Absence is not a finding.** No directory row means not indexed, not "doesn't exist" — roughly one funded project in four has no repo linked here. Ask the applicant rather than failing them on our coverage gap.
 
 **FAIL condition:** Ineligible project type or clear track mismatch.
 **FLAG condition:** Borderline eligibility or unclear track fit.

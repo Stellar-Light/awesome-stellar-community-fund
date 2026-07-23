@@ -151,6 +151,23 @@ Args: https://docs.google.com/document/d/{DOC_ID}/edit
 
 For bulk fetching (e.g., Phase 1.7 pre-fetch), use `curl -sL` directly in a Python/Bash loop instead of invoking the skill per-doc — it's faster and more reliable for batch operations.
 
+## After fetching: check what the document claims
+
+Fetching the doc is half the job. Architecture docs and whitepapers are where the specific, checkable assertions live — a deployed contract address, a named integration partner, a repository, a claim to be first at something. Those are exactly the statements a reviewer should not take on trust, and most are one call:
+
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=<claim-subject>&limit=10"   # is the named partner real, live, funded?
+curl -s "https://stellarlight.xyz/api/repos/explain?q=what+does+this+do&repo=<owner>/<name>"  # is the linked repo real Soroban code?
+```
+
+Three worth checking every time:
+
+- **A contract address** — a doc claiming mainnet deployment can be confirmed against `onchain.contracts[]` on the project row (deployment date, event count), or on stellar.expert directly.
+- **A named integration partner** — check the partner exists and is `Live`. Docs frequently name partners that are aspirational rather than agreed.
+- **A "first"/"only" claim** — search the capability. Whitepapers make these more freely than submission forms do.
+
+See [`scf-claim-verifier`](../scf-claim-verifier/SKILL.md) for the full recipe. Same rule applies as everywhere else: **a missing record is a coverage gap, not a disproof** — if you can't confirm something, mark it UNVERIFIED, which this skill already does correctly for inaccessible docs.
+
 ## Common Issues
 
 - **Google "virus scan" warning**: Large Google Drive files trigger a "can't scan for viruses" page. The download URL still works but may return HTML instead of the file. Check the response content.

@@ -50,6 +50,16 @@ This is the most important field. It must answer three questions in one sentence
 - "Cross-border payroll tool using Stellar anchors to deliver USD-to-local-currency payments for remote workers in Latin America"
 - "Open-source SDK for integrating Stellar wallet functionality into existing fintech apps with three lines of code"
 
+**Check the one-liner against what already exists before you commit to it:**
+
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=<the-capability>&limit=10"
+```
+
+Search the capability the one-liner claims, not the team's brand name. If five live projects already do it, the Interest Form's job changes — it is no longer "here is a new idea" but "here is why the existing ones don't solve this", which is a much stronger form and the thing reviewers actually probe. Each row shows `status`, `scfAwarded` and `lastActivityAt`, so "three exist but two are inactive and none target our user" is a defensible, checkable claim.
+
+Finding prior art is not a reason to abandon the idea. It is the difference between a form that gets asked "how is this different from X?" in review and one that answered it up front.
+
 **Bad examples:**
 - "Revolutionary blockchain platform for the future of finance" — vague, no Stellar specificity
 - "DeFi protocol" — tells the reviewer nothing

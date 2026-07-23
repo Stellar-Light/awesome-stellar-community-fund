@@ -67,6 +67,29 @@ Provide concrete, verifiable proof of completion. The type of evidence depends o
 | Protocol / Infrastructure | Network deployment, performance benchmarks, architecture documentation |
 | Research / Design | Published report, design files, findings summary |
 
+#### Pull your own on-chain and repo evidence
+
+For a smart-contract or integration tranche, the strongest evidence is independently checkable — a reviewer can confirm it without taking your word. Your project's public row already carries it:
+
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=<your-project>&limit=1"
+```
+
+| Claim in your report | Field that substantiates it |
+|---|---|
+| "Deployed to mainnet" | `onchain.contracts[].address` + `createdAt` — the deployment date, on-chain |
+| "It's being used" | `events`, `subinvocations` per contract, with `eventsDelta` over an explicit window |
+| "Users are holding it" | `assetHolders`, `assetSupply`, `assetHoldersDelta` if you issue an asset |
+| "Here's the source" | `repos[]` (`fullName`, `url`); `lastActivityAt` shows the work is current |
+| "The contract matches the repo" | `verifiedRepo` on a contract row, where wasm validation was run |
+
+Two things worth doing before you submit:
+
+- **Quote the `asOf` date.** Every on-chain block carries one. A number without it reads as a live claim and invites a reviewer to re-check and find a different figure.
+- **If a contract shows near-zero events, say why.** A reviewer will notice. "Deployed, pre-launch, mainnet traffic starts at T2" is a fine answer; silence looks like a deployment nobody uses.
+
+If your project isn't in the directory, or the contract isn't linked yet, that's a coverage gap on our side rather than a problem with your delivery — submit the addresses directly and they can be verified on stellar.expert the same way.
+
 **Evidence quality matters:**
 - **Links must work.** Test every URL before submitting.
 - **Code must be accessible.** Public repo or reviewer-accessible private repo. Include the specific commit hash or tag for the tranche.

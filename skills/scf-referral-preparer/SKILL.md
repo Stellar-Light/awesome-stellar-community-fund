@@ -37,6 +37,18 @@ Before preparing referral materials, the team must:
 
 If any of these are missing, the team should address them before requesting a referral.
 
+**Bring the referrer evidence they can check themselves.** A referrer is putting their name on the team, so the package is far stronger when the claims in it are independently verifiable rather than asserted:
+
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=<project-or-capability>&limit=10"
+```
+
+- **"Something to show"** — if the project is in the directory, `repos[]` and `lastActivityAt` show real, current work, and `onchain` contract events or asset holders show it running. Hand the referrer the figures with their `asOf` date rather than a description of progress.
+- **Landscape context** — search the capability to see who else is building it. A referrer's first instinct is "hasn't someone done this?", and answering before they ask is worth more than any adjective.
+- **Prior SCF history** — `scfAwarded` and `scfAwardedRounds` on the team's own row. If they've been funded before, the referrer will be asked about delivery; get ahead of it.
+
+If the project isn't indexed yet, that's a gap on our side and not a mark against the team — supply repo and contract links directly, which a referrer can verify on GitHub and stellar.expert the same way.
+
 ## What the Referrer Is Asked
 
 The SCF Project Referral Form asks referrers to evaluate four areas. The referral package should give the referrer clear material for each.
