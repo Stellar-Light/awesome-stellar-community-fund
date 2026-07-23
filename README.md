@@ -2,22 +2,31 @@
 
 A collection of tools, skills, and reference materials for participating in the [Stellar Community Fund](https://communityfund.stellar.org) (SCF).
 
+> Created by [LumenLoop](https://lumenloop.com) and now maintained by [Stellar Light](https://stellarlight.xyz), which serves the SCF handbook and the live RFP list as an open API — so the round-specific facts these skills depend on can be resolved rather than remembered.
+
 ## Install as a Claude Code plugin
 
 The skills in this repo are packaged as a [Claude Code](https://docs.claude.com/en/docs/claude-code) plugin:
 
 ```
-/plugin marketplace add lumenloop/awesome-stellar-community-fund
+/plugin marketplace add Stellar-Light/awesome-stellar-community-fund
 /plugin install awesome-stellar-community-fund@awesome-scf
 ```
 
-This makes all ten SCF skills available in your session. You can also point any AI tool directly at an individual `skills/<name>/SKILL.md`, or read the [`docs/`](docs/) guides on their own.
+This makes all twelve SCF skills available in your session. You can also point any AI tool directly at an individual `skills/<name>/SKILL.md`, or read the [`docs/`](docs/) guides on their own.
 
 ## What's Inside
 
 ### [skills/](skills/)
 
 Reusable AI skills for SCF applications — reviewing, drafting, budgeting, prescreening, and more:
+
+**For reviewers (Pilots, Navigators, anyone scoring a round):**
+
+- **[scf-claim-verifier](skills/scf-claim-verifier/SKILL.md)** — Check the factual claims in a submission against live ecosystem data: prior art and duplication, the applicant's own funding history, whether a linked repo is real and recent Soroban code, whether a project is still alive, and whether a mainnet claim shows on-chain activity. Works standalone or [inside Raven](https://agents.stellar.buzz), which calls the same data layer. Ships with honesty rules — absence of a record is never evidence of absence.
+- **[scf-live-context](skills/scf-live-context/SKILL.md)** — **Use this first.** Resolve the current round, submission deadline, open RFP categories, and handbook rules from a live open API, so a dated example in another skill can never become the answer.
+
+**For applicants and reviewers both:**
 
 - **[scf-round-reviewer](skills/scf-round-reviewer/SKILL.md)** — Review and rank an entire SCF round end-to-end from a CSV export. Supports Open Track, Integration Track, and RFP Track with track-specific scoring. Orchestrates parallel batch reviews, calibration, and final ranking.
 - **[scf-reviewer](skills/scf-reviewer/SKILL.md)** — Review Build Award applications with structured evaluation across integration fit, architecture, team, traction, budget, and ecosystem commitment.

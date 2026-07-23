@@ -1,16 +1,16 @@
 {
   "name": "awesome-scf",
-  "owner": { "name": "LumenLoop", "url": "https://lumenloop.com" },
+  "owner": { "name": "Stellar Light", "url": "https://stellarlight.xyz" },
   "metadata": {
-    "description": "Skills and guides for participating in the Stellar Community Fund.",
-    "version": "0.1.0"
+    "description": "Skills and guides for participating in the Stellar Community Fund. Created by LumenLoop; maintained by Stellar Light.",
+    "version": "0.2.0"
   },
   "plugins": [
     {
       "name": "awesome-stellar-community-fund",
       "source": "./",
-      "description": "Ten SCF skills: round/application review, submission and interest-form drafting, budgeting, prescreen, competitor analysis, referral prep, and tranche reporting.",
-      "version": "0.1.0",
+      "description": "Twelve SCF skills: claim verification for reviewers, live round and open-RFP resolution, round/application review, submission and interest-form drafting, budgeting, prescreen, competitor analysis, referral prep, and tranche reporting.",
+      "version": "0.2.0",
       "category": "productivity",
       "keywords": ["stellar", "scf", "grants", "funding", "review"]
     }
