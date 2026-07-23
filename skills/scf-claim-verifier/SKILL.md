@@ -33,7 +33,16 @@ Search the *capability*, not the project's own name — an applicant's brand won
 curl -s "https://stellarlight.xyz/api/projects/search?q=<project>&limit=1"
 ```
 
-Read `scf.awarded` and `scf.awardedRounds`. Relevant to resubmission rules, to "we've never received SCF support" claims, and to sizing a request against what the team has already drawn.
+Read these fields off the project row (they are flat, not nested):
+
+| Field | Meaning |
+|---|---|
+| `scfAwarded` | `true` if our records show any SCF award |
+| `scfAwardedRounds` | which rounds, e.g. `[38, 41]` — **empty array is common, see coverage below** |
+| `scfTotalAwardedUSD` | total awarded across rounds |
+| `scfAmountStatus` | `disclosed` / otherwise — some rounds are XLM-denominated or undisclosed |
+
+Relevant to resubmission rules, to "we've never received SCF support" claims, and to sizing a request against what the team has already drawn.
 
 Round-level totals across the whole program:
 
@@ -42,6 +51,8 @@ curl -s "https://stellarlight.xyz/api/analyze?dimension=funding"
 ```
 
 ### 3. Repo reality — is the linked code real?
+
+The project row already carries a `repos[]` array (`fullName`, `url`) — check that first, it saves a call. If it is empty, search directly:
 
 ```bash
 curl -s "https://stellarlight.xyz/api/repos/search?q=<project-or-topic>&limit=5"
@@ -89,6 +100,18 @@ Before scoring against a track, resolve the current round and open RFP categorie
 | Program-wide funding | `scout.analyzeEcosystem({ dimension: "funding" })` |
 
 Because both paths read the same records, a Pilot working in Raven and a reviewer running the curls above get the same answer — and the honesty rules below apply identically in either.
+
+## Measured coverage — what you can actually verify
+
+Measured 2026-07-23 across 71 SCF-awarded projects sampled from eight categories. Know these before you treat a blank as meaningful:
+
+| Check | Answerable | Blank means |
+|---|---:|---|
+| Award amount (`scfTotalAwardedUSD`) | 97% | undisclosed or XLM-denominated round |
+| Which rounds (`scfAwardedRounds`) | 94% | attribution gap on our side — Blend is awarded with an empty rounds array |
+| Repo linked (`repos[]`) | **77%** | **no repo on the row — search `/api/repos/search` before concluding anything** |
+
+The repo gap is the one that bites: roughly one awarded project in four has no repo linked, so a blank `repos[]` is far more likely to be our coverage gap than a team with no code. Always fall back to a direct repo search, and if that also comes up empty, ask the applicant rather than scoring them down.
 
 ## Honesty rules — read before scoring
 
