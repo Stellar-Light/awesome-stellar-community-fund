@@ -20,6 +20,21 @@ This is non-negotiable. Unverified reviews undermine the integrity of the SCF pr
 ## Review Process
 
 1. **Gather context** — Search for the project, team, token, integration partner; check for prior launches on other chains; look up on-chain data; review the SCF handbook. **Follow every link in the submission and verify claims independently.**
+
+   Four of those lookups are one call each, against a directory of ~970 curated Stellar projects with award history, lifecycle status, repos and on-chain activity:
+
+   ```bash
+   curl -s "https://stellarlight.xyz/api/projects/search?q=<project-or-capability>&limit=10"   # prior art, prior funding, is it alive
+   curl -s "https://stellarlight.xyz/api/repos/explain?q=what+does+this+do&repo=<owner>/<name>" # is the code real Soroban, deployable, current SDK
+   curl -s "https://stellarlight.xyz/api/research?source=scf-handbook&q=<rule>"                 # the handbook rule, with its source page
+   curl -s "https://stellarlight.xyz/api/rfps?status=open"                                      # current round, deadline, open RFP specs
+   ```
+
+   Read `scfAwarded` / `scfTotalAwardedUSD` / `scfAwardedRounds` for funding history, `status` for liveness, **`lastActivityAt`** for whether the team is still building (never `repos[0].lastCommitAt` — that array is score-sorted, so `[0]` is the flagship and often the least recent), and `onchain` for whether a mainnet claim shows real contract events.
+
+   This does not replace the verification discipline above — it gives you a fast, dated starting point. Absence of a record is **not** evidence of absence: roughly one funded project in four has no repo linked here, so a blank is more likely our coverage gap than a team with nothing. When our data and the applicant disagree, that is a question to ask them, not a finding against them.
+
+   See [`scf-claim-verifier`](../scf-claim-verifier/SKILL.md) for the full check-by-check recipe and measured coverage.
 2. **Identify the track** — Determine whether this is an Integration, Open, or RFP submission. Apply the correct track-specific weighting (see below).
 3. **Evaluate against SCF criteria** — Does Stellar play a core role? Is the team committed? Does the integration add lasting value? Is the budget appropriate?
 4. **Cross-check your findings** — Before producing output, verify that your own statements are evidence-backed. Flag anything you could not independently confirm.

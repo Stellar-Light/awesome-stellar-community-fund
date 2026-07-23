@@ -20,15 +20,44 @@ From the submission data, identify:
 
 ### Step 2: Search Stellar Ecosystem
 
-#### SCF-Funded Projects
-- Search the [SCF Awards Page](https://communityfund.stellar.org/awards) for previously funded projects in the same category
-- Check whether those projects are still active, delivered, or abandoned
-- Note their scope, budget, and what they built
+One call answers most of this. The directory holds ~970 curated projects with their SCF award history, lifecycle status, indexed repos and on-chain activity — so "who else is doing this, did they get funded, are they still alive" is a query, not an afternoon of browsing:
 
-#### Active Stellar Projects
-- Search for live projects doing similar things on Stellar
-- Check Stellar Expert, ecosystem directories, and developer communities
-- Look for projects that launched without SCF funding
+```bash
+curl -s "https://stellarlight.xyz/api/projects/search?q=<core-function>&limit=20"
+```
+
+Search the **capability**, not the applicant's brand name — their name won't match incumbents. Run two or three phrasings (`lending`, `borrow collateral`, `money market`) before concluding anything is novel.
+
+Each row gives you, directly:
+
+| Question from the review | Field |
+|---|---|
+| Was it SCF-funded, and how much? | `scfAwarded`, `scfTotalAwardedUSD`, `scfAwardedRounds` |
+| Is it still alive? | `status` (`Live` / `Development` / `Inactive`) |
+| Are they still building? | `lastActivityAt` — newest commit across **all** their repos |
+| What did they actually build? | `repos[]` (`fullName`, `url`) |
+| Is it real on mainnet? | `onchain` — per-contract events, asset holders, with an `asOf` date |
+| Did it launch without SCF? | `scfAwarded: false` on a `Live` project |
+
+**Use `lastActivityAt`, never `repos[0].lastCommitAt`** — `repos[]` is sorted by score, so `[0]` is the flagship and often the least recently touched. Blend's `repos[0]` last moved 2024-05-01 while the project shipped 35 days ago and carries 1.17M on-chain events.
+
+For the code question — is a competitor's implementation real, or a scaffold:
+
+```bash
+curl -s "https://stellarlight.xyz/api/repos/explain?q=what+does+this+do&repo=<owner>/<name>"
+```
+
+Returns `codeVerified`: genuine `soroban-sdk` imports, whether it's a deployable contract, which SDK version and whether that version is still supported.
+
+For whether the category is genuinely underserved rather than merely unfamiliar to you:
+
+```bash
+curl -s "https://stellarlight.xyz/api/analyze?dimension=gaps"
+```
+
+**Two honesty rules.** A project missing from the directory means *not indexed*, not *does not exist* — roughly one funded project in four has no repo linked, so a blank is far more likely our coverage gap than a team with no code. And finding five incumbents does not make a sixth worthless; it makes the differentiation section the thing to scrutinise, not a reason to close the question.
+
+Cross-chain competitors are still manual — the directory is Stellar-scoped. Use the web for those and say which half came from where.
 
 #### Key Questions
 For each competitor:
