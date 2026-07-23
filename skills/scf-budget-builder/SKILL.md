@@ -11,7 +11,7 @@ Validates submission budgets against funded project benchmarks. Used during the 
 
 ## Budget Benchmarks — compute these live, don't read them off a table
 
-**Award medians move every round, and a stale benchmark costs a builder real money.** Checked 2026-07-23: the frozen table this skill used to carry was off by 27% on Tooling, 32% on Infrastructure, and 20% *low* on financial protocols. Someone sizing an infrastructure ask at the old $116K figure would have been $28K above the actual median — a rejection risk created by the skill itself.
+**Award medians move, and a stale benchmark costs a builder real money.** This skill used to carry a fixed table (Applications $85K, Developer Tooling $75K, Financial Protocols $109K, Infrastructure $116K) with no date and no way to check it. Sampling real awards on 2026-07-23 put every one of those figures materially off — in both directions, so the error wasn't a consistent drift you could mentally correct for. An applicant anchored to a wrong number either asks too high, which is a rejection risk, or too low, which leaves funding on the table.
 
 So derive them from awards that actually landed:
 
@@ -21,22 +21,18 @@ curl -s "https://stellarlight.xyz/api/projects/search?q=infrastructure&limit=25"
 
 Every row carries `scfAwarded`, `scfTotalAwardedUSD` and `category`. Pull two or three category-relevant queries, keep the rows where `scfAwarded` is true and `scfTotalAwardedUSD` is set, and take the **median** — not the mean. The spread is enormous (real awards run $2,500 to $490,160), so a mean is dragged upward by a handful of large grants and will tell a first-time applicant to ask for far too much.
 
-Program-wide totals for context:
+**A warning about how you compute this.** `projects/search` returns a *relevance-ranked slice*, not a category census — so a median over "whatever came back for query X" is not a population median, and it moves depending on which queries you ran. Measured twice on 2026-07-23 from different query sets: Tooling came out $55,000 on one sample and $92,000 on another; User-Facing App $86,000 and $121,001. Same day, same data, different slice.
+
+So do not quote a category median as a fact. Do one of these instead:
+
+- **Widen and state the sample.** Run several distinct category-relevant queries, dedupe by slug, keep `scfAwarded` rows with a disclosed `scfTotalAwardedUSD`, and report as *"median $X across N awards I sampled"* — with N. A reviewer can then judge the weight of it.
+- **Use the program-wide figures**, which are computed over the full awarded population rather than a slice:
 
 ```bash
 curl -s "https://stellarlight.xyz/api/analyze?dimension=funding"
 ```
 
-**Indicative medians as of 2026-07-23** (n=99 awarded projects with disclosed amounts) — a sanity check on your own computation, not a substitute for it:
-
-| Category | Median | Observed range |
-|---|---|---|
-| User-Facing App | $86,000 | $5,000–$490,160 |
-| Protocol/Contract | $136,000 | $2,500–$394,500 |
-| Infrastructure | $88,000 | $10,000–$444,840 |
-| Tooling | $55,000 | $14,000–$225,000 |
-
-Two honest caveats. These categories are **our** directory taxonomy, which does not map 1:1 onto SCF's own track names — "Financial Protocols" in SCF's language sits closest to Protocol/Contract here. And amounts are only counted where disclosed; XLM-denominated and undisclosed awards are excluded, so treat these as the shape of the distribution rather than a precise figure.
+Either way the honest framing for an applicant is a **range with its basis**, not a single number presented as the going rate. Award sizes genuinely span $2,500 to $490,160; anyone told "the median is $X" will anchor on it, and a mis-anchored ask is the failure this section exists to prevent.
 
 ## Rate Benchmarks
 
