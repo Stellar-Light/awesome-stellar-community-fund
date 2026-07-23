@@ -57,7 +57,7 @@ Round membership, award history and per-round funding for existing projects:
 
 ```bash
 curl -s "https://stellarlight.xyz/api/analyze?dimension=funding"          # byRound: counts + totals
-curl -s "https://stellarlight.xyz/api/projects/search?q=<project>&limit=1" # scf.awarded, awardedRounds
+curl -s "https://stellarlight.xyz/api/projects/search?q=<project>&limit=1" # scfAwarded, scfAwardedRounds, scfTotalAwardedUSD
 ```
 
 Useful for `scf-competitor-analyst` (has this team been funded before, and in which rounds?) and for `scf-prescreen-checker` (resubmission rules depend on prior award history).

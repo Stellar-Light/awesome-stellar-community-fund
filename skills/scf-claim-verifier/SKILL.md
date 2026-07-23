@@ -99,7 +99,7 @@ Before scoring against a track, resolve the current round and open RFP categorie
 | Check | Raven tool |
 |---|---|
 | Prior art / duplication | `scout.searchProjects({ q: "lending" })` |
-| Funding history | `scout.searchProjects({ q: "<project>" })` → `scf.awarded`, `scf.awardedRounds` |
+| Funding history | `scout.searchProjects({ q: "<project>" })` → `scfAwarded`, `scfAwardedRounds` |
 | Repo reality | `scout.searchRepos({ q: "<project>" })` |
 | Is it real Soroban code | `scout.explainRepo({ q: "...", repo: "owner/name" })` → `codeVerified` |
 | Current round / open RFPs | `scout.getRfps({})` |
