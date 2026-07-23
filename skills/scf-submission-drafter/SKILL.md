@@ -36,7 +36,15 @@ Before writing anything, gather the essential context. Ask the team:
 
 6. **What's the evidence of demand?** Users, metrics, waitlist signups, partner commitments, letters of intent. Concrete numbers, not vague claims.
 
-7. **What's the budget range?** Get a rough sense. The median funded Build Award is $93,700. The middle 50% fall between $60K and $128K. Rejected submissions average $102K — higher than funded ones.
+7. **What's the budget range?** Get a rough sense, then check it against awards that actually landed rather than a remembered figure — medians move between rounds, and anchoring a first-time applicant to a stale number is how they ask for the wrong amount:
+
+   ```bash
+   curl -s "https://stellarlight.xyz/api/projects/search?q=<their-category>&limit=25"
+   ```
+
+   Keep rows where `scfAwarded` is true and `scfTotalAwardedUSD` is set, take the **median** (the range runs $2,500–$490,160, so a mean misleads). As of 2026-07-23 the medians sit near $86K for user-facing apps, $136K for protocols, $88K for infrastructure and $55K for tooling — see [`scf-budget-builder`](../scf-budget-builder/SKILL.md) for the full recipe and caveats.
+
+   One durable finding worth keeping: **rejected submissions asked for more than funded ones on average.** Asking high is a risk in itself, independent of the category median.
 
 8. **Do you have a referral?** Approved Referrers can include community members, Ambassadors, Navigators, Pilots, partners, and SDF personnel (current SDF employees are not eligible for referral rewards). If the team was referred, capture the unique referral code to enter on the Interest Form. A referral does not guarantee acceptance or confer any funding advantage.
 
